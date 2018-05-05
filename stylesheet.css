@@ -27,9 +27,12 @@ h1 {
 }
 
 h2 {
+    
     font-weight: 400;
+    padding: 0px 10% 0px 10%;    
+    text-align: left;
+    
 }
-
 
 .header {
     
@@ -53,6 +56,14 @@ h2 {
     
 }
 
+
+/* Probably need to change / add class */
+
+i.fas {
+    
+    cursor: pointer;
+    
+}
 
 /*************************/
 /* NAVIGATION */
@@ -138,10 +149,11 @@ h2 {
 /*************************/
 
 
-#text {
+.text {
     
-    padding: 0px 20% 50px 20%;
+    padding: 0px 10% 50px 10%;
     text-align: justify;
+    
 }
 
 @media (max-width: 760px){
@@ -151,7 +163,7 @@ h2 {
 
 
 
-#descr {
+.descr {
     
     text-align: center;
     
@@ -162,14 +174,14 @@ a {
     text-decoration: none;
 }
 
-#text a:hover {
+.text a:hover {
     text-decoration: underline;
 }
 
 
 @media only screen and (max-width:760px){
     
-    #text {
+    body {
         padding:0px 5% 20px 0px;
     }   
 }
