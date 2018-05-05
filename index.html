@@ -1,14 +1,173 @@
-<!DOCTYPE HTML>
-
 <html>
 
     <head>
-    </head>
-    
-    <body>
         
-        <p>Come on wold!</p>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Smaller</title>
+    
+        <link type="text/css" href="stylesheet.css" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+        
+         <!-- For @MEDIA QUERIES-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- JQUERY -->
+        <script src="jquery-3.2.1.min.js"></script>
+        
+    </head>
+
+    <body>
+    
+        <script type="text/javascript">
+        
+            $(document).ready(function(){
+                
+                $(".menuItems").hide();
+               
+                $("#closeMenu").hide();
+
+                if($(window).width() > 760){
+                $("#menuBars").click(function(){
+                    
+                    $(".menuItems").toggle();
+                })
+                
+                }
+                    
+                if ($(window).width() < 760){
+                    
+                    $("#menuBars").click(function(){
+                      
+                        $("#closeMenu").show();
+
+                        $("#menuBars").hide();
+
+                        $(".menuItems").show();    
+
+                        $("nav").css("width", "250px") 
+                    
+                
+                    $("#closeMenu").click(function(){
+                        
+                        $("nav").css("width","0px")
+                       
+                        
+                        $("#menuBars").show();
+                        
+                        $(".menuItems").hide();
+                        
+                        $("#closeMenu").hide();
+                     })    
+                        
+                }) 
+           
+            }
+                
+            })
+            
+        </script>
+        
+        <nav>
+            <i id="menuBars" class="fa fa-bars"></i>
+            <i id="closeMenu" class="fa fa-times"></i>
+
+            <a class="menuItems" href="#">Books</a>
+            <a class="menuItems" href="#">Notes</a>
+            <a class="menuItems" href="#">About</a>
+
+        
+        </nav>
+        
+        <div class="header">
+            <h1>better</h1>
+            <div class="byline">
+            Providing you with better knowledge from the best books
+            </div>
+        </div>
+
+
+        <h2>Antifragilität</h2>
+
+        <div id="text">
+            
+            <p id="descr">
+            Autor: Nassim Taleb<br>
+            Knaus, 2013
+            </p>
+
+            
+
+            <p style="text-align: center;">Triade: Fragil - Robust - Antifragil<br>
+            Resilienz: wiedersteht Schocks, bleibt aber gleich.
+            Antifragilität profitiert von solchen Schocks
+            </p>
+
+            <p>Antifragilität Beispiele<br>
+            <a href="https://de.wikipedia.org/wiki/Mithridatisation">Mithridates:</a> Immunisierung gegen Gift durch Toleranzinduktion</p>
+            
+            <p>Schwarzer Schwan: unvorhergesehene, grosse, irreguläre Ereignisse. <br>
+            Oft verschleiern sich solche Ereignisse durch den hindsight bias.<br>
+            Mit abnehmender Wahrscheinlichekeit vergrösserte sich der Modalfehler. Eine absolute Robustheit ist nie erreichbar. Deshalb sollte vom Ziel, robust zu werden, abgekommen werden und das Denken darauf ausgelegt werden, dass Stressoren positiv genutzt werden können.<br>
+            Lukrez Problem: Der Glaube, der grösste Berg sei derjenige, den man mit den eigenen Augen sieht. Dasselbe gilt für Katastrophen.
+            </p>
+            
+            <p>Chaosfamilie: Unsicherheit, Variablitität, Unvollständigkeit, Risiko, Chaos, Unbeständigkeit/ Volatitiltät, Unordnung, Entropie (u.a. Unordnung), Stressoren, Irrtum, Streuung von Ergebnissen, Unwissen</p>
+            
+            <p>Mafia-Boss-prinzip: Je mächtiger der Boss, desto weniger hört man von ihm. <i class="fa fa-times"></i> Overcompensation: flüstern statt schreien<br>
+            </p>
+            
+            <p>Kritik kann gegen Unterdrückung antifragil sein, wenn der Kritikaster angegriffen werden möchte, um eine gewisse Wertschätzung oder Aufmerkamkeit zu erhalten. Deshalb ist der Beruf des Schriftstellers antifragil, einen öffentlicher Angriff sorgt für Aufmerksamkeit und Anerkennung des Werkes. Diejenigen, die versucht haben, uns Schaden zuzufügen und damit gescheitert sind, helfen uns mehr als diejenigen, die versucht haben, uns zu helfen.
+            </p>
+            
+            <p>Komplex im  Vergleich zu kompliziert: Wechselwirkungen, Stressoren als Information bsp. Knochendichte, Häufigkeit: akut > chronisch</p>
+            
+
+            <p>Evolution: antifragiles System, Die Zufälligkeit von Genmutationen und Umgebung wirken sich positiv auf das Lebewesen aus, es ist antifragil und profitiert von diesen Zufälligkeiten. <br>
+            Flugzeugabstürze führen zu einer höheren Sicherheit beim Fliegen. Das Wirschaftssystem ist fragil, da sich Fehler global und systematisch ausbreiten. Weshalb? Ein System ist antifragil, die Einzelstücke fragil sind und untereinander unabhängig. Ein System aus Individuen ist antifragiler als ein Individuum alleine. Eine Spezies ist antifragil, weil das Individuum fragil ist. Das System profitiert auf Kosten eines Individuums: was mich nicht umbringt, hat mich nicht verschont, weil ich bereits stärker bin als andere, sondern weil es andere umgebracht hat. <i class="fa fa-times"></i> Wir sollten also auch diejenigen schätzen, die Risiken auf sich nahmen und gescheitert sind. (Bsp. Unternehmer).<br>
+            Als Beispiel eines antifragilen Systems gilt die Schweiz: Sie ist ein Zusammenschluss kleiner, beinah autonomen (somit untereinander unabhängigen) Gemeinwesen. Somit besteht die Möglichkeit, dass gewisse Einheiten Fehler machen, von denen das System profitiert.</p>
+            
+            <p>Kleine Veränderungen zwingen uns dazu, uns immer wieder anzupassen. Von dem schwarzen Schwan ist man durch diese Zufälligkeit geschützt. Als Taxifahrer kann man sich anpassen, sollten an einem Tag Kunden ausbleiben. Man kann beispielsweise andere Standorte anfahren, andere Routen. Als Banker versucht man, die Zufälligkeit zu beseitigen. Jedoch kann man diese nicht beseitigt, indem man Zufälligkeit beseitigt <i class="fa fa-times"></i> </p>
+            
+            <ul>Sammlung<br>
+                <li>Feuer wird durch Wind angeregt. Ich will das Feuer sein.<br></li>  
+
+                <li>Wir wissen mehr, als wir zu wissen meinen und sehr viel mehr, , als wir artikulieren können.</li>
+            </ul>
+            
+            <p>Truthahn-Problem: Fataler Fehlschluss: Verwechseln der Abwesenheit eines Beweises (für eine Gefahr) mit dem Beweis für eine Abwesenheit. </p>
+            
+            <p>Zu enge Kontrolle führt zu Instabilität</p>
+        
+            <p>Buridans Esel: Der Esel ist gleich stark hungrig als auch durstig. Er steht vom Futter sowie vom Wasser gleich weit weg. Kann er sich nicht entscheiden, stirbt er an Hunger/ Durst. Seine einzige Rettung ist ein zufälliger Stups in die eine oder andere Richtung. Hier führt die Abwesenheit von Zufälligkeit zum Tod</p>
+            
+            <p>Iatrogenik ("vom Heiler verursacht"): Wenn der Schaden, der eine Behandlung angerichtet hat, den Nutzen übersteigt.<br>
+            Bsp. Aderlass</p>
+            
+        </div>
+        
+        <footer>
+            
+            <div>
+                <a href="#">Books</a><br>
+                <a href="#">Notes</a><br>
+                <a href="#">About</a><br>
+            </div>
+            
+            <div>
+                <p><a href="mailto:me@cr.com">Write mail</a><br>
+                &copy; corinne reutimann, 2017</p>
+                
+            </div>
+            
+        </footer>
+        
         
     </body>
-
+    
+    
 </html>
