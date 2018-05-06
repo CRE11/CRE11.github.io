@@ -18,6 +18,7 @@ body {
     
 }
 
+
 h1 {
     
     border-bottom: 20px solid black;    
@@ -38,18 +39,11 @@ h2 {
 }
 
 .header {
-    
-    margin: 30px;
-    margin-top: 65px;
+        margin-top: 65px;
     
 }
 
-@media (min-width: 760px){
-    .header {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
+
 
 .header .byline {
     
@@ -59,6 +53,11 @@ h2 {
     
 }
 
+.containerBody {
+    
+    margin: 0 8%;
+    
+}
 
 /* Probably need to change / add class */
 
@@ -88,7 +87,7 @@ i.fas {
     nav {
         
         background-color: white;
-        padding: 20px 10%;
+        padding: 20px 0px;
         position: fixed;
         text-align: left;
         top: 0;
@@ -180,7 +179,6 @@ i.fas {
 .text {
     
     line-height: 1.7;
-    padding: 0px 10% 50px 10%;
     text-align: justify;
     
 }
@@ -243,3 +241,4 @@ footer a:hover {
     border-bottom: 1px solid white;
     padding-bottom: 3px;
 }
+

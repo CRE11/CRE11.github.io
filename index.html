@@ -4,7 +4,9 @@
         
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         
-        <title>Smaller</title>
+        <title>better</title>
+        
+        <link rel="shortcut icon" href="img/better-icon.png">
     
         <link type="text/css" href="stylesheet.css" rel="stylesheet">
         
@@ -27,28 +29,28 @@
     <body>
     
         <script type="text/javascript">
-        
+
             $(document).ready(function(){
-                
+
                 $(".menuItems").hide();
-               
+
                 $("#closeMenu").hide();
 
                 if($(window).width() > 760){
-                    
+
                 $("#menuBars").click(function(){
-                    
+
                     $(".menuItems").toggle();
                     $("#menuBars").toggleClass("fa-bars").toggleClass("fa-times");
                 })
-                
-                    
+
+
                 };
-                    
+
                 if ($(window).width() < 760){
-                    
+
                     $("#menuBars").click(function(){
-                      
+
                         $("#closeMenu").show();
 
                         $("#menuBars").hide();
@@ -56,462 +58,498 @@
                         $(".menuItems").show();    
 
                         $("nav").css("width", "25%").css("padding-left", "15%");
-                    
 
-                    
-                
+
+
+
                     $("#closeMenu").click(function(){
-                        
+
                         $("nav").css("width","0").css("padding-left","0");                       
                         $("#menuBars").show();
-                        
+
                         $(".menuItems").hide();
-                        
+
                         $("#closeMenu").hide();
                      })    
-                        
+
                 }); 
-           
-                    
-                    
+
+
+
             }
-             
+
                 $(".text").hide();
-                
+
                 $(".extendText").click(function(){
-                    
+
                     $(this).parent().siblings(".text").fadeToggle(400);
                     $(this).toggleClass("fa-caret-right").toggleClass("fa-caret-down");
-                    
+
                 })
-                
-                    
+
+
             });
-            
+
         </script>
-        
-        <nav>
-            <i id="menuBars" class="fa fa-bars"></i>
-            <i id="closeMenu" class="fa fa-times"></i>
 
-            <a class="menuItems" href="#">Books</a>
-            <a class="menuItems" href="#">Notes</a>
-            <a class="menuItems" href="#">About</a>
+        <div class="containerBody">
 
-        
-        </nav>
-        
-        <div class="header">
-            <h1>better</h1>
-            <div class="byline">
-            Providing you with knowledge from my favorite books so you can get better at life
-            </div>
-        </div>
-        
-        <div id="Ant">   
-            
-            <h2>
+            <nav>
+                <i id="menuBars" class="fa fa-bars"></i>
+                <i id="closeMenu" class="fa fa-times"></i>
 
-                Antifragilität &nbsp;
-                <i class="extendText fas fa-caret-right"></i>
-
-            </h2>
-
-            <div class="text">
-
-                <p class="descr">
-                Autor: Nassim Taleb<br>
-                Knaus, 2013
-                </p>
+                <a class="menuItems" href="#">Books</a>
+                <a class="menuItems" href="#">Notes</a>
+                <a class="menuItems" href="#">About</a>
 
 
+            </nav>
 
-                <p>Triade: Fragil - Robust - Antifragil<br>
-                Resilienz: wiedersteht Schocks, bleibt aber gleich.
-                Antifragilität profitiert von solchen Schocks
-                </p>
-
-                <p>Antifragilität Beispiele<br>
-                <a href="https://de.wikipedia.org/wiki/Mithridatisation">Mithridates:</a> Immunisierung gegen Gift durch Toleranzinduktion</p>
-
-                <p>Schwarzer Schwan: unvorhergesehene, grosse, irreguläre Ereignisse. <br>
-                Oft verschleiern sich solche Ereignisse durch den hindsight bias.<br>
-                Mit abnehmender Wahrscheinlichekeit vergrösserte sich der Modalfehler. Eine absolute Robustheit ist nie erreichbar. Deshalb sollte vom Ziel, robust zu werden, abgekommen werden und das Denken darauf ausgelegt werden, dass Stressoren positiv genutzt werden können.<br>
-                Lukrez Problem: Der Glaube, der grösste Berg sei derjenige, den man mit den eigenen Augen sieht. Dasselbe gilt für Katastrophen.
-                </p>
-
-                <p>Chaosfamilie: Unsicherheit, Variablitität, Unvollständigkeit, Risiko, Chaos, Unbeständigkeit/ Volatitiltät, Unordnung, Entropie (u.a. Unordnung), Stressoren, Irrtum, Streuung von Ergebnissen, Unwissen</p>
-
-                <p>Mafia-Boss-prinzip: Je mächtiger der Boss, desto weniger hört man von ihm. <i class="fa fa-times"></i> Overcompensation: flüstern statt schreien<br>
-                </p>
-
-                <p>Kritik kann gegen Unterdrückung antifragil sein, wenn der Kritikaster angegriffen werden möchte, um eine gewisse Wertschätzung oder Aufmerkamkeit zu erhalten. Deshalb ist der Beruf des Schriftstellers antifragil, einen öffentlicher Angriff sorgt für Aufmerksamkeit und Anerkennung des Werkes. Diejenigen, die versucht haben, uns Schaden zuzufügen und damit gescheitert sind, helfen uns mehr als diejenigen, die versucht haben, uns zu helfen.
-                </p>
-
-                <p>Komplex im  Vergleich zu kompliziert: Wechselwirkungen, Stressoren als Information bsp. Knochendichte, Häufigkeit: akut > chronisch</p>
-
-
-                <p>Evolution: antifragiles System, Die Zufälligkeit von Genmutationen und Umgebung wirken sich positiv auf das Lebewesen aus, es ist antifragil und profitiert von diesen Zufälligkeiten. <br>
-                Flugzeugabstürze führen zu einer höheren Sicherheit beim Fliegen. Das Wirschaftssystem ist fragil, da sich Fehler global und systematisch ausbreiten. Weshalb? Ein System ist antifragil, die Einzelstücke fragil sind und untereinander unabhängig. Ein System aus Individuen ist antifragiler als ein Individuum alleine. Eine Spezies ist antifragil, weil das Individuum fragil ist. Das System profitiert auf Kosten eines Individuums: was mich nicht umbringt, hat mich nicht verschont, weil ich bereits stärker bin als andere, sondern weil es andere umgebracht hat. <i class="fa fa-times"></i> Wir sollten also auch diejenigen schätzen, die Risiken auf sich nahmen und gescheitert sind. (Bsp. Unternehmer).<br>
-                Als Beispiel eines antifragilen Systems gilt die Schweiz: Sie ist ein Zusammenschluss kleiner, beinah autonomen (somit untereinander unabhängigen) Gemeinwesen. Somit besteht die Möglichkeit, dass gewisse Einheiten Fehler machen, von denen das System profitiert.</p>
-
-                <p>Kleine Veränderungen zwingen uns dazu, uns immer wieder anzupassen. Von dem schwarzen Schwan ist man durch diese Zufälligkeit geschützt. Als Taxifahrer kann man sich anpassen, sollten an einem Tag Kunden ausbleiben. Man kann beispielsweise andere Standorte anfahren, andere Routen. Als Banker versucht man, die Zufälligkeit zu beseitigen. Jedoch kann man diese nicht beseitigt, indem man Zufälligkeit beseitigt <i class="fa fa-times"></i> </p>
-
-                <ul>Sammlung<br>
-                    <li>Feuer wird durch Wind angeregt. Ich will das Feuer sein.<br></li>  
-
-                    <li>Wir wissen mehr, als wir zu wissen meinen und sehr viel mehr, , als wir artikulieren können.</li>
-                </ul>
-
-                <p>Truthahn-Problem: Fataler Fehlschluss: Verwechseln der Abwesenheit eines Beweises (für eine Gefahr) mit dem Beweis für eine Abwesenheit. </p>
-
-                <p>Zu enge Kontrolle führt zu Instabilität</p>
-
-                <p>Buridans Esel: Der Esel ist gleich stark hungrig als auch durstig. Er steht vom Futter sowie vom Wasser gleich weit weg. Kann er sich nicht entscheiden, stirbt er an Hunger/ Durst. Seine einzige Rettung ist ein zufälliger Stups in die eine oder andere Richtung. Hier führt die Abwesenheit von Zufälligkeit zum Tod</p>
-
-                <p>Iatrogenik ("vom Heiler verursacht"): Wenn der Schaden, der eine Behandlung angerichtet hat, den Nutzen übersteigt.<br>
-                Bsp. Aderlass</p>
-
-                                <p>Bsp. USA: Mehr Menschen sterben an &auml;rztlichen Fehlern als an Autounf&auml;llen.</p>
-                <p>Principal-Agent-Problem:</p>
-                <p>Interessenskonflikt zw. Principal (Auftraggeber) und Agent (Beauftragter).</p>
-                <p>Risikovermeidungstechniken k&ouml;nnen das Risiko f&uuml;r schwarze Schw&auml;ne erh&ouml;hen.<br />Bsp. Verminderung von kleinen Waldbr&auml;nden f&uuml;hrt dazu, dass das Risiko f&uuml;r fatale Waldbr&auml;nde steigt.</p>
-                <p>Bsp. Wirtschaft: Staatlicher Interventionismus: alteingesessene, staatsfreundliche Unternehmen werden unterst&uuml;tzt. Krisen dieser Unternehmen werden so fataler und m&uuml;ssen staatlich behoben werden.</p>
-                <p><em>Menschen bevorzugen Aktion der Unterlassung. Auch wenn das Resultat dasselbe ist, wird eine Aktion als wichtiger oder besser bewertet.&nbsp;</em></p>
-                <p>PROKASTINATION kann auch positiv sein. <em>Bsp. wenn ich warte, bis ich bereit f&uuml;r etwas bin. W&uuml;rde ich forcieren, es fr&uuml;her zu tun, w&auml;re ich zu fragil.&nbsp;</em>So entfaltet sich mit dem Warten meine Antifragilit&auml;t.</p>
-                <p>Ger&auml;usche vs. Signal / Information: neurotischer Mensch, der immer &uuml;berreagiert vs. stoischer Mafiaboss</p>
-                <p>Zeitungen: Iatrogen, 95% Ger&auml;usch, 5 % Signal. Sehr viele irrelevante, duplizierte Nachrichten.</p>
-                <p>Utopie: Welt bisher: Wunsch, sie so zu gestalten, dass Habgier ihr nichts anhaben kann. Jetztiges Ziel: von Habgier profitieren.</p>
-                <p>&nbsp;</p>
-                <p>NERO UND FAT TONY</p>
-                <p>Anm. Zwei Kollegen (?) von Taleb. Keine Ahnung, ob die echt sind oder erfunden/ verst&auml;rkt</p>
-                <p>Fat Tony: Macht nichts, isst nur. Sagt Banker seien alles Dummk&ouml;pfe</p>
-                <p>Nero: Eher Askese, liest viel, stilbewusst. Sagt es ist eine Illusion, die Wahrscheinlichkeit verstehen zu wollen.&nbsp;</p>
-                <p>Beide sagten die Krise 2008 voraus, setzten Wetten gegen Fragilit&auml;t (was wiederum antifragil ist) und verdienten viel Geld durch die Krise.&nbsp;</p>
-                <p>// Vercengetonix: Gallier-Anf&uuml;hrer</p>
-                <p>Fat Tony glaubte nicht an Prognosen. Er verdiente sein Geld damit, dass er vorhersagte, dass Menschen, die an Prognosen glauben und auf diese investieren, pleite gehen werden.</p>
-                <p>// Stoizismus: Indifferenz gegen&uuml;ber dem Schicksal&nbsp;</p>
-                <p>Reich zu sein: wenn man sein Geld verdient, schmerzt es mehr als es Freude macht, denselben Betrag zu gewinnen. Reich zu sein = fragil zu sein. Stoiker: Seneca: machten eine "mentale &Uuml;bung" daraus, ihre Besitzt&uuml;mer abzuschreiben.</p>
-                <p>&nbsp;</p>
-                <p>Pflicht / Recht- Asymmetrie</p>
-                <p>&Ouml;lpresse: Thales: billiges Mieten von Olivenpressen und Vermietung&nbsp;</p>
-
+            <div class="header">
+                <h1>better</h1>
+                <div class="byline">
+                Providing you with knowledge from my favorite books so you can get better at life
+                </div>
             </div>
 
-        </div>     
-        
-        <div id="Sap">
-            
-            <h2>
-                
-                Sapiens: A Brief History of Humankind &nbsp;
-                <i  class="extendText fas fa-caret-right"></i>
-            
-            </h2>    
+            <div id="Ant">   
+
+                <h2>
+
+                    Antifragilität &nbsp;
+                    <i class="extendText fas fa-caret-right"></i>
+
+                </h2>
+
+                <div class="text">
+
+                    <p class="descr">
+                    Autor: Nassim Taleb<br>
+                    Knaus, 2013
+                    </p>
 
 
-            <div class="text">
 
-                <p class="descr">Yuval Noah Harari <br>
-                Harper, 2011
-                </p>
+                    <p>Triade: Fragil - Robust - Antifragil<br>
+                    Resilienz: wiedersteht Schocks, bleibt aber gleich.
+                    Antifragilität profitiert von solchen Schocks
+                    </p>
 
-                Before present
-                Neanderthals: 500’000 evolve in Europe and Middle East, 30’000 extinction
-                Homo sapiens: 200’000, East Aftica
-                Agricultural Revolution: 12’000
+                    <p>Antifragilität Beispiele<br>
+                    <a href="https://de.wikipedia.org/wiki/Mithridatisation">Mithridates:</a> Immunisierung gegen Gift durch Toleranzinduktion</p>
 
-                Next to the well known homo neanderthalensis, Homo erectus etc., there was another human species called “Homo floresiensis”, who lived on the small island of Flores in Indonesia. These people were trapped on an island that had little resources. Because small people needed less food than bigger ones, the species became dwarves, reached a maximum height of one metre and weighted maximum 25 kilograms! (Say whatt!!) They made stone tools and were able to hunt the islands elephant species, who were also dwarves (I now want a dwarf elephant)
+                    <p>Schwarzer Schwan: unvorhergesehene, grosse, irreguläre Ereignisse. <br>
+                    Oft verschleiern sich solche Ereignisse durch den hindsight bias.<br>
+                    Mit abnehmender Wahrscheinlichekeit vergrösserte sich der Modalfehler. Eine absolute Robustheit ist nie erreichbar. Deshalb sollte vom Ziel, robust zu werden, abgekommen werden und das Denken darauf ausgelegt werden, dass Stressoren positiv genutzt werden können.<br>
+                    Lukrez Problem: Der Glaube, der grösste Berg sei derjenige, den man mit den eigenen Augen sieht. Dasselbe gilt für Katastrophen.
+                    </p>
 
-                Bones were found of severely handicapped lived for many years, which concludes that the Neanderthals cared for their handicapped and disabled kin. They were about as developed as homo sapiens. However, the population of Neanderthals slowly decreased over time and the homo sapiens increased hugely.  Why? Several theories are possible, none of them absolutely plausible.
+                    <p>Chaosfamilie: Unsicherheit, Variablitität, Unvollständigkeit, Risiko, Chaos, Unbeständigkeit/ Volatitiltät, Unordnung, Entropie (u.a. Unordnung), Stressoren, Irrtum, Streuung von Ergebnissen, Unwissen</p>
 
-                Replacement Theory
-                Due to better equipment, probably more violence and better adaptability, homo sapiens replace
+                    <p>Mafia-Boss-prinzip: Je mächtiger der Boss, desto weniger hört man von ihm. <i class="fa fa-times"></i> Overcompensation: flüstern statt schreien<br>
+                    </p>
 
-                Interbreeding Theory
-                When Sapiens spread into Neanderthal land, they bred until the populations merged. Proof: DNA analyses of modern populations in the Middle East and Europe shows that 1-4% of the DNA is Neanderthal. 
-                Denisova (South Asia, same time as Neanderthals) DNA was found to be 6% of the DNA of modern Melanesians and Aboriginal Australians.
+                    <p>Kritik kann gegen Unterdrückung antifragil sein, wenn der Kritikaster angegriffen werden möchte, um eine gewisse Wertschätzung oder Aufmerkamkeit zu erhalten. Deshalb ist der Beruf des Schriftstellers antifragil, einen öffentlicher Angriff sorgt für Aufmerksamkeit und Anerkennung des Werkes. Diejenigen, die versucht haben, uns Schaden zuzufügen und damit gescheitert sind, helfen uns mehr als diejenigen, die versucht haben, uns zu helfen.
+                    </p>
 
-                Side note: Melansesia: Oceania, Part of Eastern Indonesia (Moluccas), New Guinea, Solomona Islands, Vanuatu, Fijji, New Caledonia. Blonde hair evolved independently in Melanesia (outside of Europe, blonde hair is rare), and are one of a few groups of non-Caucasian people who have blonde hair, and is due to another gene than Caucasians. 
-
-                Mega Fauna
-                As the sapines arrived in Australia, the mega fauna died (ex. Diprotodon, a two meters tall, three meters long and 2.5ton heavy wombat or huge ass emus Dromornithidae). As did the Megafauna in America
-
-                Agriculture Revolution: Biggest fraud in history
-                Not as believed, that famers had an easier and more relaxed life than their forager ancestors.
-                Hunter gatherer worked approx. 35 - 45 hrs. per week. Less people, less diseases, low child mortality (had around one kid every 3-4 years). Killed off their elderly or sick when they couldn’t keep up with the group.
-                Sapiens were meant to walk distances, climb apple trees, run after gazelles etc. but not to work on fields the whole day, clearing rocks and carrying water buckets. The big population in one place was a breeding ground for infectious diseases, high child mortality: one child per year, but they couldn’t feed it. more wars: in simple agricultural society, without social/ political rules, chance of death by another human was unto 25%. worse diet; farmers relied on only one or a few crops, were more prone to ill nutrition and devastated when a fire or drought would hit (Fragile!). Foragers on the other hand lived from different sources of food and therefore had a varied meal plan as well as (Not or even Anti-Fragile!).
-
-                Population overflowed, bc there were more people, more work had to be done. They couldn’t go back because the agricultural revolution spanned over generations, and then they didn't that they once even were foragers, and even if, they wouldn’t know how to go back and the demand that many people had could just not be sustained through a hunter and gatherer life. Home now meant an enclosed spaced instead of wild fields, grasslands, mountains and river streams. 
-                “We didn't domesticate wheat. It domesticated us”: wheat now covers 2.5 million sq km of land! Speaking of an evolutionary winner!
-
-                Domestication of animals
-                Agricultural revolution: Probably the most cruel turn in history, both for human and non-human animals.
-
-                Illusion
-                Belief system, sapiens could imagine stuff. According to Mr. Harari, the most important change that lead to the power and dominace of homo sapiens. 
-
-                Political and social institutions etc. are just collective imaginations, even human rights or fortune 500 companies. 
-
-                Imagination
-                Can be manifested, that makes it sometimes so hard to dismiss. Ex. individuality: a child living in a house with separate rooms, who is able to create and decorate his/ her own room as he/ she pleases and can look his/ her door and his parents only enter when he/ she allows them to. grows up to believe in individuality, he defines his worth and not the people around him.
-
-                Objective: Not an myth.
-                Ex. radioactivity. exists even without people believing it. Marie Curie did not believe that it would kill her, nevertheless she died from the aftereffects of overexposure to radioactive material. 
-
-                Subjective
-                Stuff that one person believes in, for example an imagined friend
-
-                Inner-Subjective
-                Stuff that more people believe in and lives although one or more people die or loose the belief. Ex. money, law, gods, nations. 
-
-                <p>
-                What do I believe in? What are my illusion? Which ones do I want to let go? Which ones to keep on?
-                </p>    
-
-                <p>
-                Equality? Somewhat, yes. As long as it does not have an influence on my comfortable lifestyle. <br>
-                Individuality? Yes. My worth is not defined by anyone. However, peoples’ opinion and action have a  important influence on me. If people like me and talk to me etc., I do feel worth more.<br>
-                Freedom? Yup, as long as it’s illusory. On a molecular level, I do not have free choice. I’m not a fatalist, just a determinist. <br>
-                Romance? Yes, although declining. I do not think I need a husband and house and two kids in order to feel fulfilled. However I notice how people around me get married and have kids, I feel obligated to do so as well, as I could be missing out otherwise. I know my parents want for me to find a man and have kids. 
-                </p>
-
-                <p>
-                Let go: nations. duh.<br>
-                Let go: job and security.<br>
-                Let go: possession. Roam and wander more<br>
-                Let go: social proof. I don’t need to do big shiny things in order to succeed. Success for me is to roam and wander and learn and do things. 
-                </p>
-
-                <p>
-                Memory overload lead to the invention of script. Partial scripts first that were used for bureaucracy like remembering how many barrels of wheat was produced in a year. The most difficult part about this was not the writing itself, but the archiving and retrieving. These partial scripts were later developed and used for other things like poetry, history, prophecies, recipes (ex. Sumerian system or hieroglyphs around 300BC, China 1200BC and Central America 1000- 500BC).
-                </p>
-
-                <p>
-                People reason hierarchies. The hindu caste system is this way bc the eternal cosmic is this way. natural differences in races, black are inferior in intelligence and morality. Slaves have a ‘slavish nature’ and free people have a ‘free nature’.<br>
-                Nowadays: natural difference btw rich and poor. however, most rich people are born into rich families and poor people into poor families. !!!
-                </p>
-
-                <p>
-                Vicious cycle: hierarchies were imagined. Most effective way to single out a group: Tell people they are a source of pollution. Humans learned to identify and stay away from sick people and dead bodies. 
-                </p>
-
-                <p>
-                When slavery was abolished, blacks and whites did not have the same chances. Blacks were not hired for white-collar jobs because they were seen as unintelligent, and the proof of their unintelligence was that there were no blacks in white-collar jobs. Therefore the ‘vicious cycle’: a chance historical situation is translated into a raid social system. <br>
-                Mother nature makes it possible that men enjoy sex with each other - some cultures forbid that. Culture tries to argue that it forbids only what is unnatural. From a biological perspective, nothing is unnatural. A truly unnatural behavior, one that goes against the laws of nature, simply cannot exist. (And therefore does not need prohibition). No culture has ever forbid men to photosynthesise. The concepts of natural and unnatural are taken from Christian theology. 
-                </p>
-
-                <p>
-                He and She<br>
-                In most societies, throughout history, there was another very persistent hierarchy: patriarchy. <br>
-                Biological: sex vs. cultural: gender. In society, a man is not a sapiens with biological qualities such as XY chromosomes, high testosterone and testicles, but the myths assigned to him, such as engaging in politics, voting, military duties. So goes for the woman, who’s not just a sapiens with XX chromosomes, high oestrogen and a womb, but also someone with duties like child care, obedient to males and not able to pursue an education. 
-                </p>
-
-                <p>
-                Reasons? Plenty of theories, all not convincing<br>
-                Muscle power? Submission bc of physical inferiority? No, some women are stronger than men, and there’s no sign in history that stronger humans had more power. (Ex. elder folks have power over adolescents). Plus, women were held from less physical demanding jobs (ex. priest) in order to pursue more physically demanding jobs like working on fields. Lastly, ‘boxing matches were not used to select Egyptian pharaohs or Catholic popes’. Although that would have been funny. 
-                </p>
-
-                <p>
-                Army of men. Warfare mostly by men, but that does not necessary mean that the ones that enjoy the fruits of wars were men, the opposite was true. High rankers in the military usually were born into it, and did not work their way up there, usually they thought little of the plebeians fighting for their affluence. 
-                </p>
-
-                <p>
-                Patriarchy of Genes. Evolution of women submitting to men due to the dependence on men for survival of themselves and their children? No, bc many other species that evolved to be dependent on others resulted in matriarchal societies, like elephants or bonobos: females spend time together and bond and help each other while males fight more often; if a male acts out, females come together to beat him up. We don’t know why in a species who relies on cooperation for success, the ones that are less cooperative (men) control individuals who are more cooperative (women).
-                </p>
-
-                <p>
-                Money money it’s all about the money.<br>
-                Money is trust. It provided the basis for trade amongst strangers living in far away cities, enabled occupation specialisation and let Rome collect tax in Syria. Also only in our collective imagination. <br>
-                First money had intrinsic value, for example barley. Later on, humans trusted money more and used more sustainable, smaller representatives without any intrinsic value. At first, it was a measured amount of things, like grams of silver. Later, coins were made with engraving stating how much it was worth (ex. containing 5 grams of gold), who authorised it and that it was punishable through that authorisation to try to counterfeit it. People trusted in this money when they trusted in the authorisation, such as a king and believed other people trusted in them as well. Funny enough, money broke through religious and societal barriers, so that Christians traded with Muslims in Roman money. 
-                Dark side of money: when everything is convertible, it can crack traditions, relationships, families and human values. Honour, loyalty, morality and love lie outside of the domain of the market, yet people try to buy and sell them for money. It replaces these values with the cold laws of supply and demand. <br>
-                Money builds universal trust in strangers, but the trust lies in money itself, not in humans. We do not trust the stranger, we trust the money they hold. If the money is gone, so is our trust. 
-                </p>
-
-                <p>
-                Empires<br>
-                Unified people, with language and religion. Han empire in East Asia - Chinese Mandarin (?), Now America speaks one of four imperial European languages: French, English, Spanish or Portuguese. Arab Empire; ex. Egypt, Zulu Empire in South Africa. <br>
-                British empire: biggest one in history.<br>
-                Most imperial elites thought they were helping for all empires inhabitants. Also they usually thought their empire must conquer the whole world and their ‘wisdom’ spread to every inhabitant, even if by force. 
-                </p>
-
-                <p>
-                Science<br>
-                Europe: explore and conquer<br>
-                Asia for example: Zhan He had the bigger fleet and bigger boats and they discovered almost every beach strip among Afroasia, however the asian did not want to expand their empire but to shield it from outsiders. Therefore the chinese wall. 
-                </p>
-
-                <p>
-                Ottoman Empire: Turkish Empire<br>
-                (From John Greene: History Crashcourse Nr.19)<br>
-                Osman founded it. They did not use the classic king-by-birth way, they kidnapped Christian boys and learned them their ideologies and then made them rule over parts of the empire.
-                </p>
-
-                <p>
-                Look up: Ivan the horrible, Moscov, Tsar of Russia
-                </p>
+                    <p>Komplex im  Vergleich zu kompliziert: Wechselwirkungen, Stressoren als Information bsp. Knochendichte, Häufigkeit: akut > chronisch</p>
 
 
-                <p>….</p>
+                    <p>Evolution: antifragiles System, Die Zufälligkeit von Genmutationen und Umgebung wirken sich positiv auf das Lebewesen aus, es ist antifragil und profitiert von diesen Zufälligkeiten. <br>
+                    Flugzeugabstürze führen zu einer höheren Sicherheit beim Fliegen. Das Wirschaftssystem ist fragil, da sich Fehler global und systematisch ausbreiten. Weshalb? Ein System ist antifragil, die Einzelstücke fragil sind und untereinander unabhängig. Ein System aus Individuen ist antifragiler als ein Individuum alleine. Eine Spezies ist antifragil, weil das Individuum fragil ist. Das System profitiert auf Kosten eines Individuums: was mich nicht umbringt, hat mich nicht verschont, weil ich bereits stärker bin als andere, sondern weil es andere umgebracht hat. <i class="fa fa-times"></i> Wir sollten also auch diejenigen schätzen, die Risiken auf sich nahmen und gescheitert sind. (Bsp. Unternehmer).<br>
+                    Als Beispiel eines antifragilen Systems gilt die Schweiz: Sie ist ein Zusammenschluss kleiner, beinah autonomen (somit untereinander unabhängigen) Gemeinwesen. Somit besteht die Möglichkeit, dass gewisse Einheiten Fehler machen, von denen das System profitiert.</p>
 
-                <p>
-                Nowadays<br>
-                Culturism
-                We don’t say “It’s in their blood”, but “It’s in their culture”
-                </p>
+                    <p>Kleine Veränderungen zwingen uns dazu, uns immer wieder anzupassen. Von dem schwarzen Schwan ist man durch diese Zufälligkeit geschützt. Als Taxifahrer kann man sich anpassen, sollten an einem Tag Kunden ausbleiben. Man kann beispielsweise andere Standorte anfahren, andere Routen. Als Banker versucht man, die Zufälligkeit zu beseitigen. Jedoch kann man diese nicht beseitigt, indem man Zufälligkeit beseitigt <i class="fa fa-times"></i> </p>
 
-                <p>
-                Adam Smith “The wealth of nations”
-                Changed the way people viewed rich people. Before if you were wealthy, you must’ve gotten more on behalf of someone else. You stole somebody’s piece of the pie. Smith basically said if you make more profit, you make the pie bigger for everybody. If I’m poor, you’ll be poor but if I’m rich, I can buy stuff from you and you’ll get rich as well. 
-                Free market economy
-                </p>
+                    <ul>Sammlung<br>
+                        <li>Feuer wird durch Wind angeregt. Ich will das Feuer sein.<br></li>  
 
-                <p>    
-                Violence<br>
-                Decline of violence is mostly due to the rise of the state. Throughout history, most violent deaths resulted from fights between families and communities. Until today, local crime is still deadlier than international wars. Numbers: 2002: 57 million people died, 172’000 people died in a war, 569’000 through violence. 873’000 suicide. (CH: vgl. Vorlesung zu forensischer Psychiatrie bei Marc Graf;, Wahrnehmung sehr verzerrt: durchschnittlich ca. 50 Morde pro Jahr (https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht.assetdetail.4262004.html) , bis zu 1000 Suizide.
-                2015: 67’606 Menschen Tod, 1’071 Suizid, Herzkreislauf: 21’593, Krebs: 17’261.
-                Quelle: https://www.bfs.admin.ch/bfs/de/home.assetdetail.3742835.html, 1. April 2018)
-                </p>
+                        <li>Wir wissen mehr, als wir zu wissen meinen und sehr viel mehr, , als wir artikulieren können.</li>
+                    </ul>
+
+                    <p>Truthahn-Problem: Fataler Fehlschluss: Verwechseln der Abwesenheit eines Beweises (für eine Gefahr) mit dem Beweis für eine Abwesenheit. </p>
+
+                    <p>Zu enge Kontrolle führt zu Instabilität</p>
+
+                    <p>Buridans Esel: Der Esel ist gleich stark hungrig als auch durstig. Er steht vom Futter sowie vom Wasser gleich weit weg. Kann er sich nicht entscheiden, stirbt er an Hunger/ Durst. Seine einzige Rettung ist ein zufälliger Stups in die eine oder andere Richtung. Hier führt die Abwesenheit von Zufälligkeit zum Tod</p>
+
+                    <p>Iatrogenik ("vom Heiler verursacht"): Wenn der Schaden, der eine Behandlung angerichtet hat, den Nutzen übersteigt.<br>
+                    Bsp. Aderlass</p>
+
+                                    <p>Bsp. USA: Mehr Menschen sterben an &auml;rztlichen Fehlern als an Autounf&auml;llen.</p>
+                    <p>Principal-Agent-Problem:</p>
+                    <p>Interessenskonflikt zw. Principal (Auftraggeber) und Agent (Beauftragter).</p>
+                    <p>Risikovermeidungstechniken k&ouml;nnen das Risiko f&uuml;r schwarze Schw&auml;ne erh&ouml;hen.<br />Bsp. Verminderung von kleinen Waldbr&auml;nden f&uuml;hrt dazu, dass das Risiko f&uuml;r fatale Waldbr&auml;nde steigt.</p>
+                    <p>Bsp. Wirtschaft: Staatlicher Interventionismus: alteingesessene, staatsfreundliche Unternehmen werden unterst&uuml;tzt. Krisen dieser Unternehmen werden so fataler und m&uuml;ssen staatlich behoben werden.</p>
+                    <p><em>Menschen bevorzugen Aktion der Unterlassung. Auch wenn das Resultat dasselbe ist, wird eine Aktion als wichtiger oder besser bewertet.&nbsp;</em></p>
+                    <p>PROKASTINATION kann auch positiv sein. <em>Bsp. wenn ich warte, bis ich bereit f&uuml;r etwas bin. W&uuml;rde ich forcieren, es fr&uuml;her zu tun, w&auml;re ich zu fragil.&nbsp;</em>So entfaltet sich mit dem Warten meine Antifragilit&auml;t.</p>
+                    <p>Ger&auml;usche vs. Signal / Information: neurotischer Mensch, der immer &uuml;berreagiert vs. stoischer Mafiaboss</p>
+                    <p>Zeitungen: Iatrogen, 95% Ger&auml;usch, 5 % Signal. Sehr viele irrelevante, duplizierte Nachrichten.</p>
+                    <p>Utopie: Welt bisher: Wunsch, sie so zu gestalten, dass Habgier ihr nichts anhaben kann. Jetztiges Ziel: von Habgier profitieren.</p>
+                    <p>&nbsp;</p>
+                    <p>NERO UND FAT TONY</p>
+                    <p>Anm. Zwei Kollegen (?) von Taleb. Keine Ahnung, ob die echt sind oder erfunden/ verst&auml;rkt</p>
+                    <p>Fat Tony: Macht nichts, isst nur. Sagt Banker seien alles Dummk&ouml;pfe</p>
+                    <p>Nero: Eher Askese, liest viel, stilbewusst. Sagt es ist eine Illusion, die Wahrscheinlichkeit verstehen zu wollen.&nbsp;</p>
+                    <p>Beide sagten die Krise 2008 voraus, setzten Wetten gegen Fragilit&auml;t (was wiederum antifragil ist) und verdienten viel Geld durch die Krise.&nbsp;</p>
+                    <p>// Vercengetonix: Gallier-Anf&uuml;hrer</p>
+                    <p>Fat Tony glaubte nicht an Prognosen. Er verdiente sein Geld damit, dass er vorhersagte, dass Menschen, die an Prognosen glauben und auf diese investieren, pleite gehen werden.</p>
+                    <p>// Stoizismus: Indifferenz gegen&uuml;ber dem Schicksal&nbsp;</p>
+                    <p>Reich zu sein: wenn man sein Geld verdient, schmerzt es mehr als es Freude macht, denselben Betrag zu gewinnen. Reich zu sein = fragil zu sein. Stoiker: Seneca: machten eine "mentale &Uuml;bung" daraus, ihre Besitzt&uuml;mer abzuschreiben.</p>
+                    <p>&nbsp;</p>
+                    <p>Pflicht / Recht- Asymmetrie</p>
+                    <p>&Ouml;lpresse: Thales: billiges Mieten von Olivenpressen und Vermietung&nbsp;</p>
+
+                </div>
+
+            </div>     
+
+            <div id="Sap">
+
+                <h2>
+
+                    Sapiens: A Brief History of Humankind &nbsp;
+                    <i  class="extendText fas fa-caret-right"></i>
+
+                </h2>    
 
 
-                <p>    
-                Back to medieval Europe: 20- 40 people were murdered for every 100’000 people every year. Global average now: 9 murders per every 100’000 people every year.<br> 
-                Central Europe: 1 murder per 100’000 people per year. 
-                </p>
+                <div class="text">
 
-                <p>
-                Waorani,  Arawete or Yanomamo: indigenous people in the Amazonian forrest. A quarter to half of the people die from violent conflicts. 
-                </p>    
+                    <p class="descr">Yuval Noah Harari <br>
+                    Harper, 2011
+                    </p>
 
-                <p>    
-                The collapse of the European empires lead to a significant decrease in international violence. Most empires retreated in peace, giving up their colonies to their independence.  In 1945, Britain ruled a quarter of the earth. Since then it retreated peacefully and gave up most of its power. 
-                Real peace is the implausibility of war (not just the absence of war)
-                Price of war soared, the gains decreased (no more colonisation and exploitation of lets say gold in Cali). Peace is worth more now: Trading!<br>
-                Plus: our leaders are peace loving now, and see, unlike histories elites (Say Hun chieftains or Aztec priests…) war as something negative.
-                </p>
+                    <p>
+                    Before present<br>
+                    Neanderthals: 500’000 evolve in Europe and Middle East, 30’000 extinction<br>
+                    Homo sapiens: 200’000, East Aftica<br>
+                    Agricultural Revolution: 12’000<br>
+                    </p>
 
-                <p>
-                We are in the formation of a world empire, and it enforces world peace very effective.
-                </p>
+                    <p>
+                    Next to the well known homo neanderthalensis, Homo erectus etc., there was another human species called “Homo floresiensis”, who lived on the small island of Flores in Indonesia. These people were trapped on an island that had little resources. Because small people needed less food than bigger ones, the species became dwarves, reached a maximum height of one metre and weighted maximum 25 kilograms! (Say whatt!!)<br> They made stone tools and were able to hunt the islands elephant species, who were also dwarves (I now want a dwarf elephant)
+                    </p>
 
-                <p>
-                Hariri mentions animal rights at least three times (My heart jumps every time)! First, why the agricultural revolution wasn’t as awesome as we might think; because other animals suffered a lot under the change. And then secondly (if I recall correctly), why it’s horrible for non-human animals to have been part of the industrial revolution, being used like machines and ignoring their ability to suffer. <br>
-                Humans couldn’t accomplish all the material wealth without laboratory monkeys, diary cows and conveyor belt chicken. He says we should not only look at human happiness (non-human animals ftw!).
-                </p>
+                    <p>
+                    Bones were found of severely handicapped lived for many years, which concludes that the Neanderthals cared for their handicapped and disabled kin. They were about as developed as homo sapiens. However, the population of Neanderthals slowly decreased over time and the homo sapiens increased hugely.  Why? Several theories are possible, none of them absolutely plausible.
+                    </p>
 
-                <p>  
-                Happiness
-                Now this genius turns out to be an utilitarian knowing about prospect theory! Can he get any more perfect than that?<br>
-                Lottery vs. accident = happiness after two years the same.
-                Standards and comparison
-                </p>  
+                    <p>
+                    Replacement Theory<br>
+                    Due to better equipment, probably more violence and better adaptability, homo sapiens replace
+                    </p>
 
-                <p>    
-                Chemical happiness - biochemical system wants to make sure that the happiness level remains relatively constant. Comparison air-conditioner
-                Nietzsche: when there is a why, life is good no matter the how
-                liberalism: everybody decides for themselves what is good and what is bad<br>
-                Selfish gene, darwin and dawkins
-                </p>
+                    <p>
+                    Interbreeding Theory<br>
+                    When Sapiens spread into Neanderthal land, they bred until the populations merged. Proof: DNA analyses of modern populations in the Middle East and Europe shows that 1-4% of the DNA is Neanderthal. 
+                    Denisova (South Asia, same time as Neanderthals) DNA was found to be 6% of the DNA of modern Melanesians and Aboriginal Australians.
+                    </p>
 
-                <p>
-                Happiness is not the only thing worthwhile<br>
-                Trying to control happiness is like a man standing at the shore trying to control waves. He tries to attract good waves and push away bad waves. As soon as he realises it’s nonsense and sits down to just watch the waves and not judge, he can enjoy the waves.
-                </p>    
+                    <p>
+                    Side note: Melansesia: Oceania, Part of Eastern Indonesia (Moluccas), New Guinea, Solomona Islands, Vanuatu, Fijji, New Caledonia. Blonde hair evolved independently in Melanesia (outside of Europe, blonde hair is rare), and are one of a few groups of non-Caucasian people who have blonde hair, and is due to another gene than Caucasians. 
+                    </p>
 
-            
+                    <p>
+                    Mega Fauna<br>
+                    As the sapines arrived in Australia, the mega fauna died (ex. Diprotodon, a two meters tall, three meters long and 2.5ton heavy wombat or huge ass emus Dromornithidae). As did the Megafauna in America
+                    </p>
+
+                    <p>
+                    Agriculture Revolution: Biggest fraud in history<br>
+                    Not as believed, that famers had an easier and more relaxed life than their forager ancestors.<br>
+                    Hunter gatherer worked approx. 35 - 45 hrs. per week. Less people, less diseases, low child mortality (had around one kid every 3-4 years). Killed off their elderly or sick when they couldn’t keep up with the group.<br>
+                    Sapiens were meant to walk distances, climb apple trees, run after gazelles etc. but not to work on fields the whole day, clearing rocks and carrying water buckets. The big population in one place was a breeding ground for infectious diseases, high child mortality: one child per year, but they couldn’t feed it. more wars: in simple agricultural society, without social/ political rules, chance of death by another human was unto 25%. worse diet; farmers relied on only one or a few crops, were more prone to ill nutrition and devastated when a fire or drought would hit (Fragile!). Foragers on the other hand lived from different sources of food and therefore had a varied meal plan as well as (Not or even Anti-Fragile!).
+                    </p>
+
+                    <p>
+                    Population overflowed, bc there were more people, more work had to be done. They couldn’t go back because the agricultural revolution spanned over generations, and then they didn't that they once even were foragers, and even if, they wouldn’t know how to go back and the demand that many people had could just not be sustained through a hunter and gatherer life. Home now meant an enclosed spaced instead of wild fields, grasslands, mountains and river streams. <br>
+                    “We didn't domesticate wheat. It domesticated us”: wheat now covers 2.5 million sq km of land! Speaking of an evolutionary winner!
+                    </p>
+
+                    <p>
+                    Domestication of animals<br>
+                    Agricultural revolution: Probably the most cruel turn in history, both for human and non-human animals.
+                    </p>
+
+                    <p>
+                    Illusion<br>
+                    Belief system, sapiens could imagine stuff. According to Mr. Harari, the most important change that lead to the power and dominace of homo sapiens. 
+                    </p>
+
+                    <p>
+                    Political and social institutions etc. are just collective imaginations, even human rights or fortune 500 companies. 
+                    </p>
+
+                    <p>
+                    Imagination<br>
+                    Can be manifested, that makes it sometimes so hard to dismiss. Ex. individuality: a child living in a house with separate rooms, who is able to create and decorate his/ her own room as he/ she pleases and can look his/ her door and his parents only enter when he/ she allows them to. grows up to believe in individuality, he defines his worth and not the people around him.
+                    </p>
+
+                    <p>
+                    Objective: Not an myth.<br>
+                    Ex. radioactivity. exists even without people believing it. Marie Curie did not believe that it would kill her, nevertheless she died from the aftereffects of overexposure to radioactive material. 
+                    </p>    
+
+                    <p>
+                    Subjective<br>
+                    Stuff that one person believes in, for example an imagined friend
+                    </p>
+
+                    <p>
+                    Inner-Subjective<br>
+                    Stuff that more people believe in and lives although one or more people die or loose the belief. Ex. money, law, gods, nations. 
+                    </p>
+
+                    <p>
+                    What do I believe in? What are my illusion? Which ones do I want to let go? Which ones to keep on?
+                    </p>    
+
+                    <p>
+                    Equality? Somewhat, yes. As long as it does not have an influence on my comfortable lifestyle. <br>
+                    Individuality? Yes. My worth is not defined by anyone. However, peoples’ opinion and action have a  important influence on me. If people like me and talk to me etc., I do feel worth more.<br>
+                    Freedom? Yup, as long as it’s illusory. On a molecular level, I do not have free choice. I’m not a fatalist, just a determinist. <br>
+                    Romance? Yes, although declining. I do not think I need a husband and house and two kids in order to feel fulfilled. However I notice how people around me get married and have kids, I feel obligated to do so as well, as I could be missing out otherwise. I know my parents want for me to find a man and have kids. 
+                    </p>
+
+                    <p>
+                    Let go: nations. duh.<br>
+                    Let go: job and security.<br>
+                    Let go: possession. Roam and wander more<br>
+                    Let go: social proof. I don’t need to do big shiny things in order to succeed. Success for me is to roam and wander and learn and do things. 
+                    </p>
+
+                    <p>
+                    Memory overload lead to the invention of script. Partial scripts first that were used for bureaucracy like remembering how many barrels of wheat was produced in a year. The most difficult part about this was not the writing itself, but the archiving and retrieving. These partial scripts were later developed and used for other things like poetry, history, prophecies, recipes (ex. Sumerian system or hieroglyphs around 300BC, China 1200BC and Central America 1000- 500BC).
+                    </p>
+
+                    <p>
+                    People reason hierarchies. The hindu caste system is this way bc the eternal cosmic is this way. natural differences in races, black are inferior in intelligence and morality. Slaves have a ‘slavish nature’ and free people have a ‘free nature’.<br>
+                    Nowadays: natural difference btw rich and poor. however, most rich people are born into rich families and poor people into poor families. !!!
+                    </p>
+
+                    <p>
+                    Vicious cycle: hierarchies were imagined. Most effective way to single out a group: Tell people they are a source of pollution. Humans learned to identify and stay away from sick people and dead bodies. 
+                    </p>
+
+                    <p>
+                    When slavery was abolished, blacks and whites did not have the same chances. Blacks were not hired for white-collar jobs because they were seen as unintelligent, and the proof of their unintelligence was that there were no blacks in white-collar jobs. Therefore the ‘vicious cycle’: a chance historical situation is translated into a raid social system. <br>
+                    Mother nature makes it possible that men enjoy sex with each other - some cultures forbid that. Culture tries to argue that it forbids only what is unnatural. From a biological perspective, nothing is unnatural. A truly unnatural behavior, one that goes against the laws of nature, simply cannot exist. (And therefore does not need prohibition). No culture has ever forbid men to photosynthesise. The concepts of natural and unnatural are taken from Christian theology. 
+                    </p>
+
+                    <p>
+                    He and She<br>
+                    In most societies, throughout history, there was another very persistent hierarchy: patriarchy. <br>
+                    Biological: sex vs. cultural: gender. In society, a man is not a sapiens with biological qualities such as XY chromosomes, high testosterone and testicles, but the myths assigned to him, such as engaging in politics, voting, military duties. So goes for the woman, who’s not just a sapiens with XX chromosomes, high oestrogen and a womb, but also someone with duties like child care, obedient to males and not able to pursue an education. 
+                    </p>
+
+                    <p>
+                    Reasons? Plenty of theories, all not convincing<br>
+                    Muscle power? Submission bc of physical inferiority? No, some women are stronger than men, and there’s no sign in history that stronger humans had more power. (Ex. elder folks have power over adolescents). Plus, women were held from less physical demanding jobs (ex. priest) in order to pursue more physically demanding jobs like working on fields. Lastly, ‘boxing matches were not used to select Egyptian pharaohs or Catholic popes’. Although that would have been funny. 
+                    </p>
+
+                    <p>
+                    Army of men. Warfare mostly by men, but that does not necessary mean that the ones that enjoy the fruits of wars were men, the opposite was true. High rankers in the military usually were born into it, and did not work their way up there, usually they thought little of the plebeians fighting for their affluence. 
+                    </p>
+
+                    <p>
+                    Patriarchy of Genes. Evolution of women submitting to men due to the dependence on men for survival of themselves and their children? No, bc many other species that evolved to be dependent on others resulted in matriarchal societies, like elephants or bonobos: females spend time together and bond and help each other while males fight more often; if a male acts out, females come together to beat him up. We don’t know why in a species who relies on cooperation for success, the ones that are less cooperative (men) control individuals who are more cooperative (women).
+                    </p>
+
+                    <p>
+                    Money money it’s all about the money.<br>
+                    Money is trust. It provided the basis for trade amongst strangers living in far away cities, enabled occupation specialisation and let Rome collect tax in Syria. Also only in our collective imagination. <br>
+                    First money had intrinsic value, for example barley. Later on, humans trusted money more and used more sustainable, smaller representatives without any intrinsic value. At first, it was a measured amount of things, like grams of silver. Later, coins were made with engraving stating how much it was worth (ex. containing 5 grams of gold), who authorised it and that it was punishable through that authorisation to try to counterfeit it. People trusted in this money when they trusted in the authorisation, such as a king and believed other people trusted in them as well. Funny enough, money broke through religious and societal barriers, so that Christians traded with Muslims in Roman money. 
+                    Dark side of money: when everything is convertible, it can crack traditions, relationships, families and human values. Honour, loyalty, morality and love lie outside of the domain of the market, yet people try to buy and sell them for money. It replaces these values with the cold laws of supply and demand. <br>
+                    Money builds universal trust in strangers, but the trust lies in money itself, not in humans. We do not trust the stranger, we trust the money they hold. If the money is gone, so is our trust. 
+                    </p>
+
+                    <p>
+                    Empires<br>
+                    Unified people, with language and religion. Han empire in East Asia - Chinese Mandarin (?), Now America speaks one of four imperial European languages: French, English, Spanish or Portuguese. Arab Empire; ex. Egypt, Zulu Empire in South Africa. <br>
+                    British empire: biggest one in history.<br>
+                    Most imperial elites thought they were helping for all empires inhabitants. Also they usually thought their empire must conquer the whole world and their ‘wisdom’ spread to every inhabitant, even if by force. 
+                    </p>
+
+                    <p>
+                    Science<br>
+                    Europe: explore and conquer<br>
+                    Asia for example: Zhan He had the bigger fleet and bigger boats and they discovered almost every beach strip among Afroasia, however the asian did not want to expand their empire but to shield it from outsiders. Therefore the chinese wall. 
+                    </p>
+
+                    <p>
+                    Ottoman Empire: Turkish Empire<br>
+                    (From John Greene: History Crashcourse Nr.19)<br>
+                    Osman founded it. They did not use the classic king-by-birth way, they kidnapped Christian boys and learned them their ideologies and then made them rule over parts of the empire.
+                    </p>
+
+                    <p>
+                    Look up: Ivan the horrible, Moscov, Tsar of Russia
+                    </p>
+
+
+                    <p>….</p>
+
+                    <p>
+                    Nowadays<br>
+                    Culturism
+                    We don’t say “It’s in their blood”, but “It’s in their culture”
+                    </p>
+
+                    <p>
+                    Adam Smith “The wealth of nations”
+                    Changed the way people viewed rich people. Before if you were wealthy, you must’ve gotten more on behalf of someone else. You stole somebody’s piece of the pie. Smith basically said if you make more profit, you make the pie bigger for everybody. If I’m poor, you’ll be poor but if I’m rich, I can buy stuff from you and you’ll get rich as well. 
+                    Free market economy
+                    </p>
+
+                    <p>    
+                    Violence<br>
+                    Decline of violence is mostly due to the rise of the state. Throughout history, most violent deaths resulted from fights between families and communities. Until today, local crime is still deadlier than international wars. Numbers: 2002: 57 million people died, 172’000 people died in a war, 569’000 through violence. 873’000 suicide. (CH: vgl. Vorlesung zu forensischer Psychiatrie bei Marc Graf;, Wahrnehmung sehr verzerrt: durchschnittlich ca. 50 Morde pro Jahr (https://www.bfs.admin.ch/bfs/de/home/statistiken/kriminalitaet-strafrecht.assetdetail.4262004.html) , bis zu 1000 Suizide.
+                    2015: 67’606 Menschen Tod, 1’071 Suizid, Herzkreislauf: 21’593, Krebs: 17’261.
+                    Quelle: https://www.bfs.admin.ch/bfs/de/home.assetdetail.3742835.html, 1. April 2018)
+                    </p>
+
+
+                    <p>    
+                    Back to medieval Europe: 20- 40 people were murdered for every 100’000 people every year. Global average now: 9 murders per every 100’000 people every year.<br> 
+                    Central Europe: 1 murder per 100’000 people per year. 
+                    </p>
+
+                    <p>
+                    Waorani,  Arawete or Yanomamo: indigenous people in the Amazonian forrest. A quarter to half of the people die from violent conflicts. 
+                    </p>    
+
+                    <p>    
+                    The collapse of the European empires lead to a significant decrease in international violence. Most empires retreated in peace, giving up their colonies to their independence.  In 1945, Britain ruled a quarter of the earth. Since then it retreated peacefully and gave up most of its power. 
+                    Real peace is the implausibility of war (not just the absence of war)
+                    Price of war soared, the gains decreased (no more colonisation and exploitation of lets say gold in Cali). Peace is worth more now: Trading!<br>
+                    Plus: our leaders are peace loving now, and see, unlike histories elites (Say Hun chieftains or Aztec priests…) war as something negative.
+                    </p>
+
+                    <p>
+                    We are in the formation of a world empire, and it enforces world peace very effective.
+                    </p>
+
+                    <p>
+                    Hariri mentions animal rights at least three times (My heart jumps every time)! First, why the agricultural revolution wasn’t as awesome as we might think; because other animals suffered a lot under the change. And then secondly (if I recall correctly), why it’s horrible for non-human animals to have been part of the industrial revolution, being used like machines and ignoring their ability to suffer. <br>
+                    Humans couldn’t accomplish all the material wealth without laboratory monkeys, diary cows and conveyor belt chicken. He says we should not only look at human happiness (non-human animals ftw!).
+                    </p>
+
+                    <p>  
+                    Happiness
+                    Now this genius turns out to be an utilitarian knowing about prospect theory! Can he get any more perfect than that?<br>
+                    Lottery vs. accident = happiness after two years the same.
+                    Standards and comparison
+                    </p>  
+
+                    <p>    
+                    Chemical happiness - biochemical system wants to make sure that the happiness level remains relatively constant. Comparison air-conditioner
+                    Nietzsche: when there is a why, life is good no matter the how
+                    liberalism: everybody decides for themselves what is good and what is bad<br>
+                    Selfish gene, darwin and dawkins
+                    </p>
+
+                    <p>
+                    Happiness is not the only thing worthwhile<br>
+                    Trying to control happiness is like a man standing at the shore trying to control waves. He tries to attract good waves and push away bad waves. As soon as he realises it’s nonsense and sits down to just watch the waves and not judge, he can enjoy the waves.
+                    </p>    
+
+
+
+                </div>
 
             </div>
-            
-        </div>
 
-        
-        <div id="Neg">
-        
-            <h2>
-                
-                Negotiation Genius &nbsp;
-                <i class="extendText fas fa-caret-right"></i>
-                
-            </h2>
-            
-            <div class="text">
-            
-                <p class="descr">
-                
-                    Deepak Malhotra & Max H. Bazerman <br>
-                    Harvard Business School, 2007
-                    
-                </p>
-                
-                
-                <p>
-                    Value: Whatever people find useful or desirable
-                </p>
-                
-                <p>
-                PREPARE
-                </p>
-                
-                <p>
-                1. BATNA <br>
-                Best Alternative to Negotiated Argument <br>
-                What will I do if the situation ends in nodeal?<br>
-                ex. wait for new offers, apporach different people with other deals, not sell at all...
-                </p>
-                
-                <p>
-                2. Reservation value <br>
-                Walk-away-point, indifference point<br>
-                ex. offers negotiated with others <br>
-                depends on risk aversion
-                </p>
-                
-                <p>
-                3. Assess other partys' BATNA
-                </p>
-                
-                <p>
-                4. Reservation value<br>
-                ex. estate firm can buy another property, decide not to build at all <br>
-                here it is critical whether such properties are rare or abundant
-                </p>
-                
+
+            <div id="Neg">
+
+                <h2>
+
+                    Negotiation Genius &nbsp;
+                    <i class="extendText fas fa-caret-right"></i>
+                    <br>
+
+                </h2>
+
+                <div class="text">
+
+                    <p class="descr">
+
+                        Deepak Malhotra & Max H. Bazerman <br>
+                        Harvard Business School, 2007
+
+                    </p>
+
+
+                    <p>
+                        Value: Whatever people find useful or desirable
+                    </p>
+
+                    <p>
+                    PREPARE
+                    </p>
+
+                    <p>
+                    1. BATNA <br>
+                    Best Alternative to Negotiated Argument <br>
+                    What will I do if the situation ends in nodeal?<br>
+                    ex. wait for new offers, apporach different people with other deals, not sell at all...
+                    </p>
+
+                    <p>
+                    2. Reservation value <br>
+                    Walk-away-point, indifference point<br>
+                    ex. offers negotiated with others <br>
+                    depends on risk aversion
+                    </p>
+
+                    <p>
+                    3. Assess other partys' BATNA
+                    </p>
+
+                    <p>
+                    4. Reservation value<br>
+                    ex. estate firm can buy another property, decide not to build at all <br>
+                    here it is critical whether such properties are rare or abundant
+                    </p>
+
+                </div>
+
+
             </div>
-            
-            
-        </div>
-        
-                
-        <div>
-        
-            <h2 style="text-align: center">
-                
-                Coming soon:
-                
-            </h2>
-            
-            <p class="descr" style="">
-                Homo Deus <br>
-                Superforecasting
-            </p>
-  
-        </div>
-        
-        
+
+
+            <div>
+
+                <h2 style="text-align: center">
+
+                    Coming soon:
+
+                </h2>
+
+                <p class="descr" style="">
+                    Homo Deus <br>
+                    Superforecasting
+                </p>
+
+            </div>
+
+        </div> 
+
         <footer>
-            
+
             <div>
                 <a href="#">Books</a><br>
                 <a href="#">Notes</a><br>
                 <a href="#">About</a><br>
             </div>
-            
+
             <div>
                 <p><a href="mailto:me@cr.com">Write mail</a><br>
                 &copy; cr 2017</p>
-                
+
             </div>
-            
+
         </footer>
         
       
