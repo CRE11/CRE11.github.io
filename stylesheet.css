@@ -1,3 +1,5 @@
+/* MARKUP, Titles etc. */
+
 ::selection {
     
     background: #AOAOAO;
@@ -10,19 +12,31 @@
 
 
 body {
-
-    font-family: 'Playfair Display', serif;
+    
+    font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
     
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+p {
+    
+    font-weight: 300;
+    
+}
+
+ol {
+    line-height: 1.7;
+}
 
 h1 {
     
     border-bottom: 20px solid black;    
     border-top: 20px solid black;
+    font-family: 'Playfair Display', serif;    
     font-size: 5em;
     font-weight: 900;
     text-align: center;
@@ -32,14 +46,17 @@ h1 {
 
 h2 {
     
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
-    padding: 0px 10% 0px 10%;    
     text-align: left;
     
 }
 
 .header {
-        margin-top: 65px;
+    
+    margin-top: 65px;
+    font-family: 'Playfair Display', serif;    
+    
     
 }
 
@@ -72,17 +89,6 @@ i.fas {
 /*************************/
 
 @media only screen and (min-width:760px){
-    
-    .text {
-        
-        padding: 0px 3% 20px 3%;
-        
-    }
-    
-    h2 {
-        
-        padding: 0px 3% 20px 3%;
-    }
     
     nav {
         
@@ -195,12 +201,18 @@ a {
     text-decoration: none;
 }
 
-.text a:hover {
+p a:hover {
+    
     text-decoration: underline;
+    
 }
 
 
-
+.disclaimer {
+    
+    padding-top: 20px;
+    
+}
 
 /*************************/
 /* FOOTER */

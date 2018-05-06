@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+
+<html>
+
+       <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>better questions</title>
+        
+        <link rel="shortcut icon" href="img/better-icon.png">
+    
+        <link type="text/css" href="stylesheet.css" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+        
+         <!-- For @MEDIA QUERIES-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- NEWER VERSION OF FA -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        
+        <!-- JQUERY -->
+        <script src="jquery-3.2.1.min.js"></script>
+        
+    </head>
+  
+    
+    <body>
+    
+        <div class="containerBody">
+
+            <script type="text/javascript">
+
+                $(document).ready(function(){
+
+                    $(".menuItems").hide();
+
+                    $("#closeMenu").hide();
+
+                    if($(window).width() > 760){
+
+                    $("#menuBars").click(function(){
+
+                        $(".menuItems").toggle();
+                        $("#menuBars").toggleClass("fa-bars").toggleClass("fa-times");
+                    })
+
+
+                    };
+
+                    if ($(window).width() < 760){
+
+                        $("#menuBars").click(function(){
+
+                            $("#closeMenu").show();
+
+                            $("#menuBars").hide();
+
+                            $(".menuItems").show();    
+
+                            $("nav").css("width", "25%").css("padding-left", "15%");
+
+
+
+
+                        $("#closeMenu").click(function(){
+
+                            $("nav").css("width","0").css("padding-left","0");                       
+                            $("#menuBars").show();
+
+                            $(".menuItems").hide();
+
+                            $("#closeMenu").hide();
+                         })    
+
+                    }); 
+
+
+
+                }
+
+                    $(".text").hide();
+
+                    $(".extendText").click(function(){
+
+                        $(this).parent().siblings(".text").fadeToggle(400);
+                        $(this).toggleClass("fa-caret-right").toggleClass("fa-caret-down");
+
+                    })
+
+
+                });
+
+            </script>
+
+
+            <nav>
+                <i id="menuBars" class="fa fa-bars"></i>
+                <i id="closeMenu" class="fa fa-times"></i>
+
+                <a class="menuItems" href="index.html">Books</a>
+                <a class="menuItems" href="questions.html">Questions</a>
+                <a class="menuItems" href="#">About</a>
+
+
+            </nav>
+
+            <div class="header">
+                <h1>better</h1>
+                <div class="byline">
+                Providing you with questions so you can know yourself and others better
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                Disclaimer: <br>
+                Some questions are from here:
+                <p>
+                No Small Talk Cards by Kristen Berman from Irrational Labs <br>
+                <a href="https://gumroad.com/l/xRHSS">Get the No Small Talk Cards here</a><br></p>
+                <p>
+                And the last 36 ones are from this <a href="http://journals.sagepub.com/doi/pdf/10.1177/0146167297234003">paper</a>
+                </p>
+                
+            </div>
+
+            <ol class="ol1">
+                <li class="li1"><span class="s2">What did you think when you first met me?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your earliest childhood memory?</span></li>
+                <li class="li1"><span class="s2">If you could change something about me, what would it be?</span></li>
+                <li class="li1"><span class="s2">What kind of car will you be driving in ten years?</span></li>
+                <li class="li1"><span class="s2">When I&rsquo;m going to visit my parents, will you come with me?</span></li>
+                <li class="li1"><span class="s2">Could you live with me disliking your friends?</span></li>
+                <li class="li1"><span class="s2">What does the perfect Sunday looks like when you&rsquo;re 80?</span></li>
+                <li class="li1"><span class="s2">Which topic that I&rsquo;m talking about a lot, annoys you?</span></li>
+                <li class="li1"><span class="s2">Do you want to ever get married? If yes, how?</span></li>
+                <li class="li1"><span class="s2">Do you like breakfast in bed?</span></li>
+                <li class="li1"><span class="s2">When was the last time you did something for the first time?</span></li>
+                <li class="li1"><span class="s2">What would you do with a big lottery wins?</span></li>
+                <li class="li1"><span class="s2">Is it okay for a couple to have shared beds?</span></li>
+                <li class="li1"><span class="s2">Which party do you elect? </span></li>
+                <li class="li1"><span class="s2">Do you want kids?</span></li>
+                <li class="li1"><span class="s2">If we invited people over for dinner, would you clean the dishes right after or leave it out for the next day?</span></li>
+                <li class="li1"><span class="s2">Have you ever been caught lying?</span></li>
+                <li class="li1"><span class="s2">You have two job offers - one that is very interesting, the other pays 30% more. Which one would you choose?</span></li>
+                <li class="li1"><span class="s2">Is it okay to use the bathroom together?</span></li>
+                <li class="li1"><span class="s2">In the next ten years, do you want to life in the city or rather in the country?</span></li>
+                <li class="li1"><span class="s2">What kinda sexual fantasies do you want to act out?</span></li>
+                <li class="li1"><span class="s2">If you would be in a coma for years, would you want me to fall in love with someone new?</span></li>
+                <li class="li1"><span class="s2">Do you like cats?</span></li>
+                <li class="li1"><span class="s2">Tell me about a situation you really should have acted differently and still regret it.</span></li>
+                <li class="li1"><span class="s2">Would you do a handstand for me, right now right here?</span></li>
+                <li class="li1"><span class="s2">Which piece of clothing of mine do you like most? which one is annoying you?</span></li>
+                <li class="li1"><span class="s2">A friend that lives away 10km invited us for dinner, would you go by public transit or taxi?</span></li>
+                <li class="li1"><span class="s2">Do you always want to work or would you also take care of the children for couple of years?</span></li>
+                <li class="li1"><span class="s2">Do you think I&rsquo;m feminine enough?</span></li>
+                <li class="li1"><span class="s2">Would you still meet a person, who I don&rsquo;t want to see again?</span></li>
+                <li class="li1"><span class="s2">What is embarrassing you so much, you haven&rsquo;t even wanted to tell me to not change the picture of you?</span></li>
+                <li class="li1"><span class="s2">Do you remember how you really came to like me?</span></li>
+                <li class="li1"><span class="s2">Which movie or song do I need to know in order to understand you?</span></li>
+                <li class="li1"><span class="s2">On a scale from 0-10, how gay are you?</span></li>
+                <li class="li1"><span class="s2">If my parents would need care, would you help me?</span></li>
+                <li class="li1"><span class="s2">Would you hire a cleaner?</span></li>
+                <li class="li1"><span class="s2">If I wanted to keep a really ugly armchair in our apartment, would you accept it if you know it&rsquo;s important to me?</span></li>
+                <li class="li1"><span class="s2">Would you be disappointed if I gave you a coupon as a<span class="Apple-converted-space">&nbsp; </span>birthday present?</span></li>
+                <li class="li1"><span class="s2">Can you bear it if I&rsquo;m snoring?</span></li>
+                <li class="li1"><span class="s2">Are separate bank accounts important?</span></li>
+                <li class="li1"><span class="s2">Cutlery in washing machine: sort it or don&rsquo;t sort it?</span></li>
+                <li class="li1"><span class="s2">Do you think a couple should do sports and eat healthy to look good for the other?</span></li>
+                <li class="li1"><span class="s2">Which one of your character traits could annoy me in the course of your life?</span></li>
+                <li class="li1"><span class="s2">Can you bear not to know where I am and what I&rsquo;m doing?</span></li>
+                <li class="li1"><span class="s2">Would you take my last name if I&rsquo;d want you to?</span></li>
+                <li class="li1"><span class="s2">Would you be angry if I&rsquo;d loose all our money at the stock market?</span></li>
+                <li class="li1"><span class="s2">How often do you want sex?</span></li>
+                <li class="li1"><span class="s2">Which temperature in bedroom can we agree on?</span></li>
+                <li class="li1"><span class="s2">Can you wear an underwear twice?</span></li>
+                <li class="li1"><span class="s2">Do you like what I&rsquo;m cooking?</span></li>
+                <li class="li1"><span class="s2">Are you afraid, to become like your parents?</span></li>
+                <li class="li1"><span class="s2">On vacation, would you rather life in a hotel or on the camping?</span></li>
+                <li class="li1"><span class="s2">Is it okay, if I buy shoes for 250&euro;?</span></li>
+                <li class="li1"><span class="s2">If one of us got a super job in another city, would you want to keep a long-distance relationship?</span></li>
+                <li class="li1"><span class="s2">Would it be okay for you if I flirt with your friends?</span></li>
+                <li class="li1"><span class="s2">If we would ever split up, what do you think could be the reason for it?</span></li>
+                <li class="li1"><span class="s2">Where do you really want to travel?</span></li>
+                <li class="li1"><span class="s2">What if after an accident, I&rsquo;d be in a wheelchair, would you still want to continue our relationship?</span></li>
+                <li class="li1"><span class="s2">What do you like most about our sex?</span></li>
+                <li class="li1"><span class="s2">Is there something you&rsquo;d want to change?</span></li>
+                <li class="li1"><span class="s2">Can we live with the fact that one of us earns more than the other?</span></li>
+                <li class="li1"><span class="s2">What things do you not want to accept in me?</span></li>
+                <li class="li1"><span class="s2">What small thing makes you really annoyed?</span></li>
+                <li class="li1"><span class="s2">If you want kids, how many would you want?</span></li>
+                <li class="li1"><span class="s2">What would you eat if you&rsquo;d have to eat the same thing for a week?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your favourite spice?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your least favourite spice?</span></li>
+                <li class="li1"><span class="s2">Do you drink enough water? Do you remind yourself?</span></li>
+                <li class="li1"><span class="s2">Kill a spider or set it free outside?</span></li>
+                <li class="li1"><span class="s2">Prisoners dilemma: Would you defect or cooperate? Under which circumstances would you change your mind?</span></li>
+                <li class="li1"><span class="s2">Train dilemma: would you kill one person in order to save three?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your morning ritual?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your evening ritual?</span></li>
+                <li class="li1"><span class="s2">Is there something you&rsquo;d lie to me about to protect me?</span></li>
+                <li class="li1"><span class="s2">Would you get a Facebook profile together with me?</span></li>
+                <li class="li1"><span class="s2">What were your favourite fonts again?</span></li>
+                <li class="li1"><span class="s2">Stripes or polka dots?</span></li>
+                <li class="li1"><span class="s2">What feminine or girly ability or activity would you really like to have/ do?</span></li>
+                <li class="li1"><span class="s2">What from your previous relationship(s) do you not want to repeat?</span></li>
+                <li class="li1"><span class="s2">Would you sell your van in order to get a yellow VW-bus?</span></li>
+                <li class="li1"><span class="s2">Do you think it&rsquo;s a good act to give money to beggars?</span></li>
+                <li class="li1"><span class="s2">Which three things do you want to take on a lonely island (next to basics)?</span></li>
+                <li class="li1"><span class="s2">What would you do if you hear a robber enter your home?</span></li>
+                <li class="li1"><span class="s2">What would you tell your 10 year old self?</span></li>
+                <li class="li1"><span class="s2">Which tip or saying from your parent/ grand-parent is very important to you?</span></li>
+                <li class="li1"><span class="s2">Would you rather clean a clogged drain or a dirty toilet?</span></li>
+                <li class="li1"><span class="s2">Would you rather want to meet the pope or the queen?</span></li>
+                <li class="li1"><span class="s2">If you&rsquo;d destroy something very important to me, would you consider just buying it new, replacing it and not telling me?</span></li>
+                <li class="li1"><span class="s2">Favourite piece of clothing?</span></li>
+                <li class="li1"><span class="s2">What is a topic that upsets you and is underestimated?</span></li>
+                <li class="li1"><span class="s2">Did you ever wanted to marry one of your girlfriends before?</span></li>
+                <li class="li1"><span class="s2">What would you make/ cook for me if I get sick? </span></li>
+                <li class="li1"><span class="s2">Do you want to be cremated or buried in a coffin?</span></li>
+                <li class="li1"><span class="s2">Do you want to donate your organs after you do? (if yes, which ones? including cornea?)</span></li>
+                <li class="li1"><span class="s2">Would you rather want to ride a horse or a camel?</span></li>
+                <li class="li1"><span class="s2">What do you think would be easier to process, if I&rsquo;d die or if I&rsquo;d leave you (for someone else)?</span></li>
+                <li class="li1"><span class="s2">If I would give you a really crappy or kitsch presents, would you tell me?</span></li>
+                <li class="li1"><span class="s2">Is it okay for a woman to propose to a man?</span></li>
+                <li class="li1"><span class="s2">If we&rsquo;d have kids together and split up, would you consider taking custody? or shared custody?</span></li>
+                <li class="li1"><span class="s2">What did you really dislike about yourself when you were younger but were able to accept now?</span></li>
+                <li class="li1"><span class="s2">What surprised you the most about your current job?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s the craziest thing a boss has ever asked you to do?</span></li>
+                <li class="li1"><span class="s2"> If you were guaranteed to be successful, what job would you want?</span></li>
+                <li class="li1"><span class="s2">Are there any apps on your phone that you can&rsquo;t live without?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s a book you hated that everyone else loved, and vice versa?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s a movie that made you cry? Or laugh aloud?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s the weirdest thing you&rsquo;ve ever eaten?</span></li>
+                <li class="li1"><span class="s2"> What is the funniest sport to you?</span></li>
+                <li class="li1"><span class="s2"> Who would you want to be your kids godfather? Who might ask you to be their kids&rsquo; godfather?</span></li>
+                <li class="li1"><span class="s2">Do you tell people enough how much they mean to you?</span></li>
+                <li class="li1"><span class="s2">Does your family have any &ldquo;secret&rdquo; or famous recipes?</span></li>
+                <li class="li1"><span class="s2"> What did you like more as a kid: the swing or the slides?</span></li>
+                <li class="li1"><span class="s2"> Would you want to move to the city if I would really want to go there (maybe bc of a job)?</span></li>
+                <li class="li1"><span class="s2">What are your favourite names?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s the coolest road trip you&rsquo;ve ever been on?</span></li>
+                <li class="li1"><span class="s2"> Can you make a map for me where you have been and where you still want to go?</span></li>
+                <li class="li1"><span class="s2"> Could I convince you to come to Australia for me?</span></li>
+                <li class="li1"><span class="s2"> Tell me the best home-remedy you know?</span></li>
+                <li class="li1"><span class="s2"> If I&rsquo;d lie in bed the whole day not doing anything, would you animate me to do something or let me lie there?</span></li>
+                <li class="li1"><span class="s2"> Would you ever get a tattoo? What would it be? </span></li>
+                <li class="li1"><span class="s2">Who&rsquo;s the most important role model or mentor you&rsquo;ve had in your life?</span></li>
+                <li class="li1"><span class="s2">If you were in charge of picking the eighth wonder of the world, what would you choose?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s the strangest compliment you&rsquo;ve ever gotten?</span></li>
+                <li class="li1"><span class="s2"> Pepper or salt?</span></li>
+                <li class="li1"><span class="s2">Do you think you&rsquo;re more the type to be called or do you call people? (I.e. to go out, meet up)</span></li>
+                <li class="li1"><span class="s2">If you could teach a college course on any subject you want, what would it be?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s the most out-of-character thing you&rsquo;ve ever done?</span></li>
+                <li class="li1"><span class="s2">What about your teenage self embarrasses you most?</span></li>
+                <li class="li1"><span class="s2">When&rsquo;s the last time you failed spectacularly at something?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your family&rsquo;s weirdest tradition?</span></li>
+                <li class="li1"><span class="s2"> What&rsquo;s something you have hidden from your boss? </span></li>
+                <li class="li1"><span class="s2">Do you have any irrational fears and if so, what are they?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s the funniest or most traumatic thing that&rsquo;s ever happened to you on a date?</span></li>
+                <li class="li1"><span class="s2"> Which animal can you imitate the best? Do it now</span></li>
+                <li class="li1"><span class="s2">Show me an artistic trick you can do</span></li>
+                <li class="li1"><span class="s2">How far can you bend over with your knees straight?</span></li>
+                <li class="li1"><span class="s2">Do you believe in the concept of &ldquo;the one&rdquo;?</span></li>
+                <li class="li1"><span class="s2">Do you believe in fate?</span></li>
+                <li class="li1"><span class="s2">Tell me a story where you inspired someone</span></li>
+                <li class="li1"><span class="s2">What do you think people dislike about you?</span></li>
+                <li class="li1"><span class="s2"> What is your favourite country flag?</span></li>
+                <li class="li1"><span class="s2">Do you have any secret untapped passions?</span></li>
+                <li class="li1"><span class="s2">Do you have a hunch about how you&rsquo;re going to idea?</span></li>
+                <li class="li1"><span class="s2">What age do you hope to live to?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your favourite flavour of syrup?</span></li>
+                <li class="li1"><span class="s2">What&rsquo;s your favourite pancake topping?</span></li>
+                <li class="li1"><span class="s2">Fruit smoothie or green smoothie?</span></li>
+                <li class="li1"><span class="s2">If you were a native american, what would be your name?</span></li>
+                <li class="li1"><span class="s2"> What was the lowlight and highlight of your week?</span></li>
+                <li class="li1"><span class="s2">What was the weirdest/ craziest thing you experienced while travelling?</span></li>
+                <li class="li1"><span class="s2"> Would you rather not ever have sex again in your life or never kiss again?</span></li>
+                <li class="li1"><span class="s2"> If you had the choice, would you rather have been born male or female, and why?</span></li>
+                <li class="li1"><span class="s2"> If you had to make certain thoughts illegal, what thoughts would you make illegal?</span></li>
+                <li class="li1"><span class="s2"> If you could change anything about the way you were raised, what would it be?</span></li>
+                <li class="li1"><span class="s2"> Would you rather loose all your old memories, or never be able to make new ones?</span></li>
+                <li class="li1"><span class="s2"> Given the choice of anyone in the world, whom would you want as a dinner guest?</span></li>
+                <li class="li1"><span class="s2"> What would you choose to be the last meal?</span></li>
+                <li class="li1"><span class="s2"> If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?</span></li>
+                <li class="li1"><span class="s2"> What was something you realised you did wrong your whole life?</span></li>
+                <li class="li1"><span class="s2">When did you last sing to yourself? To someone else?</span></li>
+                <li class="li1"><span class="s2"> What was something you thought to be true as a kid and then, years later, realised was entirely false?</span></li>
+                <li class="li1"><span class="s2"> Who of your friends has the best style?</span></li>
+                <li class="li1"><span class="s2"> If you could live anywhere in the world, where would it be?</span></li>
+                <li class="li1"><span class="s2"> Would you like to be famous? In what way?</span></li>
+                <li class="li1"><span class="s2"> When were you last outside of your comfort zone?</span></li>
+                <li class="li1"><span class="s2"> What&rsquo;s the strangest thing about where you grew up?</span></li>
+                <li class="li1"><span class="s2"> If you could walke up tomorrow having gained any one quality or ability, what would it be?</span></li>
+                <li class="li1"><span class="s2"> Forget how old you are - How old do you feel? What age would you return to?</span></li>
+                <li class="li1"><span class="s2"> What gives you energy?</span></li>
+                <li class="li1"><span class="s2"> If you could solve one problem in the world, which would it be?</span></li>
+                <li class="li1"><span class="s2"> What is the nicest compliment you have ever received?</span></li>
+                <li class="li1"><span class="s2"> What frustrates you very easily?</span></li>
+                <li class="li1"><span class="s2">What was the last lie that you told?</span></li>
+                <li class="li1"><span class="s2"> Tell me something about yourself that you wouldn&rsquo;t mention on a first date</span></li>
+                <li class="li1"><span class="s2"> Describe the last time someone&rsquo;s actions really surprised you.</span></li>
+                <li class="li1"><span class="s2"> What did you want to be when you were a child?</span></li>
+                <li class="li1"><span class="s2"> What sorts of themes are recurring in your dreams?</span></li>
+                <li class="li1"><span class="s2"> What&rsquo;s the best date you have ever planned?</span></li>
+                <li class="li1"><span class="s2"> What romantic gesture would you be really stoked about?</span></li>
+                <li class="li1"><span class="s2"> Do you have a favourite word?</span></li>
+                <li class="li1"><span class="s2"> What languages do you like?</span></li>
+                <li class="li1"><span class="s2"> What life experience made you grow the most?</span></li>
+                <li class="li1"><span class="s2"> What experience have you had that made you a more compassionate person?</span></li>
+                <li class="li1"><span class="s2"> What would be a deal breaker when it comes to dating someone?</span></li>
+                <li class="li1"><span class="s2"> What is your guilty pleasure?</span></li>
+                <li class="li1"><span class="s2"> What personality trait do you have that annoys your co-workers? Your friends?</span></li>
+                <li class="li1"><span class="s2"> What personality trait are you most proud of?</span></li>
+                <li class="li1"><span class="s2"> Are you in love? Why is this sometimes difficult?</span></li>
+                <li class="li1"><span class="s2"> Do you believe in serendipity? Explain why</span></li>
+                <li class="li1"><span class="s2"> What is something you think you do more or less than other people?</span></li>
+                <li class="li1"><span class="s2"> Think about a time you have been sexually uncomfortable. Please share details.</span></li>
+                <li class="li1"><span class="s2"> Imagine you must change one big decision you&rsquo;ve made. What decision and why?</span></li>
+                <li class="li1"><span class="s2"> What crazy job would you like to do if money was no object?</span></li>
+                <li class="li1"><span class="s2"> What is the most touching/ inspiring gift you ever gave someone?</span></li>
+                <li class="li1"><span class="s2"> What are you embarrassed about?</span></li>
+                <li class="li1"><span class="s2"> Which things are illegal you think should not be? Which things you think are the opposite?</span></li>
+                <li class="li1"><span class="s2"> What&rsquo;s your favourite emoticon?</span></li>
+                <li class="li1"><span class="s2"> What do you feel too old for?</span></li>
+                <li class="li1"><span class="s2"> What do you feel too young for?</span></li>
+                <li class="li1"><span class="s2"> Would you want to be my boyfriend? </span></li>
+                <li class="li1"><span class="s2"> Have you ever kept something borrowed more or less on purpose?</span></li>
+                <li class="li1"><span class="s2"> Draw a star. Does it has five points or six?</span></li>
+                <li class="li1"><span class="s2"> Can you juggle with three balls? Any more?</span></li>
+            </ol>
+            
+            <p class="p1"><span class="s1">Set I</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">1. Given the choice of anyone in the world, whom would you want as a dinner guest?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">2. Would you like to be famous? In what way?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">3. Before making a telephone call, do you ever rehearse what you are going to say? Why?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">4. What would constitute a &ldquo;perfect&rdquo; day for you?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">5. When did you last sing to yourself? To someone else?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">6. If you were able to live to the age of 90 and retain either the mind or body of a 30-year-old for the last 60 years of your life, which would you want?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">7. Do you have a secret hunch about how you will die?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">8. Name three things you and your partner appear to have in common.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">9. For what in your life do you feel most grateful?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">10. If you could change anything about the way you were raised, what would it be?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">11. Take four minutes and tell your partner your life story in as much detail as possible.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">12. If you could wake up tomorrow having gained any one quality or ability, what would it be?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">Set II</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">13. If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">14. Is there something that you&rsquo;ve dreamed of doing for a long time? Why haven&rsquo;t you done it?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">15. What is the greatest accomplishment of your life?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">16. What do you value most in a friendship?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">17. What is your most treasured memory?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">18. What is your most terrible memory?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">19. If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">20. What does friendship mean to you?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">21. What roles do love and affection play in your life?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">22. Alternate sharing something you consider a positive characteristic of your partner. Share a total of five items.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">23. How close and warm is your family? Do you feel your childhood was happier than most other people&rsquo;s?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">24. How do you feel about your relationship with your mother?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">Set III</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">25. Make three true &ldquo;we&rdquo; statements each. For instance, &ldquo;We are both in this room feeling ... &ldquo;</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">26. Complete this sentence: &ldquo;I wish I had someone with whom I could share ... &ldquo;</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">27. If you were going to become a close friend with your partner, please share what would be important for him or her to know.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">28. Tell your partner what you like about them; be very honest this time, saying things that you might not say to someone you&rsquo;ve just met.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">29. Share with your partner an embarrassing moment in your life.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">30. When did you last cry in front of another person? By yourself?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">31. Tell your partner something that you like about them already.</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">32. What, if anything, is too serious to be joked about?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">33. If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven&rsquo;t you told them yet?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">34. Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">35. Of all the people in your family, whose death would you find most disturbing? Why?</span></p>
+            <p class="p2">&nbsp;</p>
+            <p class="p1"><span class="s1">36. Share a personal problem and ask your partner&rsquo;s advice on how he or she might handle it. Also, ask your partner to reflect back to you how you seem to be feeling about the problem you have chosen</span></p>
+            
+        </div>
+            
+            
+        <footer>
+
+            <div>
+                <a href="index.html">Books</a><br>
+                <a href="questions.html">Questions</a><br>
+                <a href="#">About</a><br>
+            </div>
+
+            <div>
+                <p><a href="mailto:me@cr.com">mail</a><br>
+                &copy; CR 2018</p>
+
+            </div>
+
+        </footer>
+        
+    </body>
+    
+</html>
