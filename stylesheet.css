@@ -21,6 +21,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
 
 p {
     
@@ -35,7 +36,7 @@ ol {
 h1 {
     
     border-bottom: 20px solid black;    
-    border-top: 20px solid black;
+    border-top: 7px solid black;
     font-family: 'Playfair Display', serif;    
     font-size: 5em;
     font-weight: 900;
@@ -55,8 +56,7 @@ h2 {
 .header {
     
     margin-top: 65px;
-    font-family: 'Playfair Display', serif;    
-    
+    font-family: 'Playfair Display', serif;     
     
 }
 
