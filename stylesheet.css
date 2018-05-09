@@ -2,8 +2,9 @@
 
 ::selection {
     
-    background: #AOAOAO;
+    background: pink;
     
+    /* original: #A0A0A0; bright blue*/
 }
 
 /*************************/
@@ -11,17 +12,16 @@
 /*************************/
 
 
+
 body {
     
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto';
     font-size: 12pt;
     font-weight: 300;
     margin: 0;
     
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
 
 p {
     
@@ -84,97 +84,6 @@ i.fas {
     
 }
 
-/*************************/
-/* NAVIGATION */
-/*************************/
-
-@media only screen and (min-width:760px){
-    
-    nav {
-        
-        background-color: white;
-        padding: 20px 0px;
-        position: fixed;
-        text-align: left;
-        top: 0;
-        width: 100%;
-        
-    }
-    
-    nav a {
-        
-        margin: 0 5px;
-    
-    }
-    
-    nav a:nth-child(3){
-        
-        margin-left: 40px;
-        
-    }
-
-    nav a:hover {
-        
-        text-decoration: none;
-        border-bottom: 1px solid black;
-        padding-bottom: 3px;
-        
-    }
-    
-}
-
-
-@media only screen and (max-width:760px){
-    
-    nav {
-        
-        background-color: black;
-        color:white;
-        height: 100%;
-        left: 0;
-        position: fixed;
-        transition: 0.5s;
-        top: 0;
-        width: 0px;
-        z-index: 2;
-    
-    }
-    
-    nav a {
-        
-        color: white;
-        display: block;
-        margin: 20px 0;
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        transition: 0.3s;
-        
-    }
-
-    
-    nav .fa {
-        font-size: 2em;
-        left: 10%;
-        position: fixed;
-        top: 20px; 
-    }
-    
-    nav .fa-bars {
-        color: black;
-    }
-    
-    nav .fa-times {
-        cursor:pointer;
-    }
-    
-}
-
-#menuBars {
-    
-    font-size: 1.5em;
-    cursor: pointer;
-    position: fixed;
-}
 
 
 /*************************/
@@ -214,6 +123,116 @@ p a:hover {
     
 }
 
+
+
+/*************************/
+/* NAVIGATION */
+/*************************/
+
+@media only screen and (min-width:760px){
+    
+    nav {
+        
+        background-color: white;
+        padding: 20px 0px;
+        position: fixed;
+        text-align: left;
+        top: 0;
+        width: 100%;
+        
+    }
+    
+    nav a {
+        
+        margin: 0 5px;
+    
+    }
+    
+    nav a:nth-of-type(1) {
+        
+        margin-left: 50px;
+        
+    }
+    
+    nav a:hover {
+        
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 3px;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width:760px){
+    
+  nav {
+        
+        background-color: black;
+        color:white;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        transition: 0.5s;
+        top: 0;
+        width: 0px;
+        z-index: 2;
+    
+    }
+    
+    nav a {
+        
+        color: white;
+        display: block;
+        margin: 20px 0;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        transition: 0.3s;
+        
+    }
+
+   
+    nav .fa {
+        
+        font-size: 2em;
+        left: 10%;
+        position: fixed;
+        top: 20px; 
+        
+    }
+    
+    
+    nav .fa-bars {
+        
+        color: black;
+        
+    }
+    
+    nav .fa-times {
+        
+        cursor:pointer;
+        
+    }
+   
+}
+
+.navigationTwo {
+    
+    width: 30%;
+    padding-left: 15%;
+    
+}
+
+
+#menuIcon {
+    
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    
+}
+
 /*************************/
 /* FOOTER */
 /*************************/
@@ -226,7 +245,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     line-height: 2em;
-    padding: 40px 0px;
+    padding: 20px 0px;
     text-align: left;
     width: 100%;
     
@@ -239,7 +258,9 @@ footer div:first-child {
 }
 
 footer div:last-child {
+    
     margin-right: 10%;
+    
 }
 
 footer a {

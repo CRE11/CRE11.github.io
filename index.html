@@ -6,6 +6,17 @@
         
         <title>better</title>
         
+        <style type="text/css">
+        
+
+
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400');
+            @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+
+            
+        </style>
+        
+        
         <link rel="shortcut icon" href="img/better-icon.png">
     
         <link type="text/css" href="stylesheet.css" rel="stylesheet">
@@ -28,18 +39,52 @@
     
         <script type="text/javascript">
 
-            $(document).ready(function(){
+            
+            
+            
+            
+         $(document).ready(function(){
+        
+        
+        if($(window).width() > 760){
 
-                $(".menuItems").hide();
+            $(".menuItems").hide();
+            
+             $("#menuIcon").click(function(){
 
-                $("#closeMenu").hide();
+                 $(this).toggleClass("fa-bars fa-times");
+                 $(".menuItems").toggle();
 
-                if($(window).width() > 760){
 
-                $("#menuBars").click(function(){
+             });
+
+             
+        };
+             
+        
+        if($(window).width() < 760) {
+           
+            $(".menuItems").hide();
+                    
+            $(".fa-bars").click(function(){
+                
+                $(".menuItems").toggle();
+                $("#menuIcon").toggleClass("fa-times fa-bars");
+                $("nav").toggleClass("navigationTwo");
+                
+            });
+           
+           
+        };
+             
+             
+       /*           $(".menuItems").hide();
+ 
+
+                $("#menuIcon").click(function(){
 
                     $(".menuItems").toggle();
-                    $("#menuBars").toggleClass("fa-bars").toggleClass("fa-times");
+                    $("#menuIcon").toggleClass("fa-bars").toggleClass("fa-times");
                 })
 
 
@@ -47,7 +92,18 @@
 
                 if ($(window).width() < 760){
 
-                    $("#menuBars").click(function(){
+                    $("#menuIcon").click(function(){
+                        
+                        $(this).toggleClass("fa-bars").toggleClass("fa-times");
+                        
+                        $(".menuItems").show();    
+
+                        $("nav").css("width", "30%").css("padding-left", "15%");
+
+                        
+                    });*/
+                    
+    /*               $("#menuBars").click(function(){
 
                         $("#closeMenu").show();
 
@@ -55,7 +111,7 @@
 
                         $(".menuItems").show();    
 
-                        $("nav").css("width", "25%").css("padding-left", "15%");
+                        $("nav").css("width", "30%").css("padding-left", "15%");
 
 
 
@@ -71,17 +127,17 @@
                      })    
 
                 }); 
+*/
 
 
-
-            }
+            
 
                 $(".text").hide();
 
                 $(".extendText").click(function(){
 
                     $(this).parent().siblings(".text").fadeToggle(400);
-                    $(this).toggleClass("fa-caret-right").toggleClass("fa-caret-down");
+                    $(this).toggleClass("fa-caret-right fa-caret-down");
 
                 })
 
@@ -93,14 +149,10 @@
         <div class="containerBody">
 
             <nav>
-                <i id="menuBars" class="fa fa-bars"></i>
-                <i id="closeMenu" class="fa fa-times"></i>
-
+                <i id="menuIcon" class="fa fa-bars"></i>
                 <a class="menuItems" href="index.html">Books</a>
                 <a class="menuItems" href="questions.html">Questions</a>
                 <a class="menuItems" href="#">About</a>
-
-
             </nav>
 
             <div class="header">
