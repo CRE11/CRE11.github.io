@@ -8,12 +8,9 @@
         
         <style type="text/css">
         
-
-
             @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400');
             @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
-
-            
+          
         </style>
         
         
@@ -33,118 +30,11 @@
         <!-- JQUERY -->
         <script src="jquery-3.2.1.min.js"></script>
         
+        <script src="betterScript.js"></script> 
+        
     </head>
 
     <body>
-    
-        <script type="text/javascript">
-
-            
-            
-            
-            
-         $(document).ready(function(){
-        
-        
-        if($(window).width() > 760){
-
-            $(".menuItems").hide();
-            
-             $("#menuIcon").click(function(){
-
-                 $(this).toggleClass("fa-bars fa-times");
-                 $(".menuItems").toggle();
-
-
-             });
-
-             
-        };
-             
-        
-        if($(window).width() < 760) {
-           
-            $(".menuItems").hide();
-                    
-            $(".fa-bars").click(function(){
-                
-                $(".menuItems").toggle();
-                $("#menuIcon").toggleClass("fa-times fa-bars");
-                $("nav").toggleClass("navigationTwo");
-                
-            });
-           
-           
-        };
-             
-             
-       /*           $(".menuItems").hide();
- 
-
-                $("#menuIcon").click(function(){
-
-                    $(".menuItems").toggle();
-                    $("#menuIcon").toggleClass("fa-bars").toggleClass("fa-times");
-                })
-
-
-                };
-
-                if ($(window).width() < 760){
-
-                    $("#menuIcon").click(function(){
-                        
-                        $(this).toggleClass("fa-bars").toggleClass("fa-times");
-                        
-                        $(".menuItems").show();    
-
-                        $("nav").css("width", "30%").css("padding-left", "15%");
-
-                        
-                    });*/
-                    
-    /*               $("#menuBars").click(function(){
-
-                        $("#closeMenu").show();
-
-                        $("#menuBars").hide();
-
-                        $(".menuItems").show();    
-
-                        $("nav").css("width", "30%").css("padding-left", "15%");
-
-
-
-
-                    $("#closeMenu").click(function(){
-
-                        $("nav").css("width","0").css("padding-left","0");                       
-                        $("#menuBars").show();
-
-                        $(".menuItems").hide();
-
-                        $("#closeMenu").hide();
-                     })    
-
-                }); 
-*/
-
-
-            
-
-                $(".text").hide();
-
-                $(".extendText").click(function(){
-
-                    $(this).parent().siblings(".text").fadeToggle(400);
-                    $(this).toggleClass("fa-caret-right fa-caret-down");
-
-                })
-
-
-            });
-
-        </script>
 
         <div class="containerBody">
 
@@ -158,7 +48,7 @@
             <div class="header">
                 <h1>better</h1>
                 <div class="byline">
-                Providing you with knowledge from my favorite books so you can get better at life
+                Knowledge from my favorite books so you can get better at life
                 </div>
             </div>
 

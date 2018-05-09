@@ -23,14 +23,12 @@ body {
 }
 
 
-p {
+p, ol {
     
     font-weight: 300;
-    
-}
-
-ol {
     line-height: 1.7;
+
+    
 }
 
 h1 {
@@ -123,6 +121,13 @@ p a:hover {
     
 }
 
+.disclaimer a {
+    
+    text-decoration: underline;
+    text-underline-position: under;
+    
+}
+
 
 
 /*************************/
@@ -134,7 +139,7 @@ p a:hover {
     nav {
         
         background-color: white;
-        padding: 20px 0px;
+        padding: 20px 0px 35px 0px;
         position: fixed;
         text-align: left;
         top: 0;
@@ -161,6 +166,7 @@ p a:hover {
         padding-bottom: 3px;
         
     }
+
     
 }
 
