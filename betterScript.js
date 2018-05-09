@@ -1,48 +1,67 @@
-            
-            
-        $(document).ready(function(){
-        
-        
-        if($(window).width() > 760){
 
-            $(".menuItems").hide();
-            
-             $("#menuIcon").click(function(){
-
-                 $(this).toggleClass("fa-bars fa-times");
-                 $(".menuItems").toggle();
+$(document).ready(function(){
 
 
-             });
+    if($(window).width() > 760){
 
-             
-        };
-             
-        
-        if($(window).width() < 760) {
-           
-            $(".menuItems").hide();
-                    
-            $(".fa-bars").click(function(){
-                
-                $(".menuItems").toggle();
-                $("#menuIcon").toggleClass("fa-times fa-bars");
-                $("nav").toggleClass("navigationTwo");
-                
-            });
-           
-           
-        };
-            
+        $(".menuItems").hide();
 
-                $(".text").hide();
+         $("#menuIcon").click(function(){
 
-                $(".extendText").click(function(){
+             $(this).toggleClass("fa-bars fa-times");
+             $(".menuItems").toggle();
 
-                    $(this).parent().siblings(".text").fadeToggle(500);
-                    $(this).toggleClass("fa-caret-right fa-caret-down");
 
-                })
+         });
 
+
+    };
+
+
+    if($(window).width() < 760) {
+
+        $(".menuItems").hide();
+
+        $(".fa-bars").click(function(){
+
+            $(".menuItems").toggle();
+            $("#menuIcon").toggleClass("fa-times fa-bars");
+            $("nav").toggleClass("navigationTwo");
 
         });
+
+
+    };
+
+
+    $(".text").hide();
+
+            $(".extendText").click(function(){
+
+                $(this).parent().siblings(".text").fadeToggle(500);
+                $(this).toggleClass("fa-caret-right fa-caret-down");
+
+            })
+
+     $(window).scroll(function(){
+
+         if ($(this).scrollTop() > 50) {
+
+             $("nav").addClass('pink');
+         } 
+
+         else {
+
+             $("nav").removeClass('pink');
+
+         }
+
+    });
+
+    $("footer").load("footer.html");
+
+
+});
+
+            
+
