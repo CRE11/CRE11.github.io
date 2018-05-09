@@ -47,17 +47,26 @@ $(document).ready(function(){
 
          if ($(this).scrollTop() > 50) {
 
-             $("nav").addClass('pink');
+             $(".scrollToTop").show();
+             
          } 
 
          else {
 
-             $("nav").removeClass('pink');
+             $(".scrollToTop").hide();
 
          }
 
     });
-
+    
+    
+    $(".scrollToTop").click(function(){
+        
+        $("html, body").animate({scrollTop: 0}, 1000);
+        
+    });
+    
+    
     $("footer").load("footer.html");
 
 

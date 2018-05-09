@@ -66,6 +66,7 @@ h2 {
     color: rgb(55,55,55);
     font-size: 1.9em;
     font-style: italic;
+    text-align: center;
     
 }
 
@@ -286,4 +287,12 @@ footer a:hover {
     
     color:pink;
     
+}
+
+.scrollToTop {
+    
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 8%;
 }
