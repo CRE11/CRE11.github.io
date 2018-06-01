@@ -91,9 +91,10 @@ i.fas {
 /*************************/
 
 
-.text {
+.textMain {
     
     line-height: 1.7;
+    max-width: 740px;
     text-align: justify;
     
 }
